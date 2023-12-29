@@ -1,0 +1,55 @@
+@import "../global.scss";
+
+.dropdown {
+  font-size: 17px;
+  margin-right: 2em;
+  text-transform: uppercase;
+  &__title {
+    padding-bottom: 1.3em;
+    cursor: pointer;
+    color: #fff;
+    &-options {
+      position: absolute;
+      z-index: 89;
+      width: 12em;
+      display: flex;
+      flex-direction: column;
+      background-color: $back-color1;
+      box-shadow: inset;
+      box-shadow: 4px 18px 14px 6px rgba(0, 0, 0, 0.4);
+      padding-bottom: 0.4em;
+      text-transform: none;
+    }
+  }
+  &__title:hover {
+    color: #000;
+  }
+  a {
+    font-size: 14px;
+    margin: 0.7em;
+    text-decoration: none;
+    color: #fff;
+  }
+  a:hover {
+    color: #000;
+  }
+}
+
+@media (max-width: 768px) {
+  .dropdown {
+    padding: 1em 0 0 1em;
+    display: flex;
+    flex-direction: column;
+    &__title {
+      padding: 0;
+      &-options {
+        position: relative;
+        box-shadow: none;
+        padding: 0.8em 0 0;
+      }
+    }
+    a {
+      margin: 0.2em 0 0.8em 0.8em;
+    }
+  }
+}

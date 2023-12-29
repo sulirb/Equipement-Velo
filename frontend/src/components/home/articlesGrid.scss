@@ -1,0 +1,66 @@
+@import "../../global.scss";
+
+.articles-grid {
+  width: 100%;
+  font-size: 30px;
+  display: inline-block;
+  margin-bottom: 5rem;
+  padding: 0 3em;
+  h2 {
+    font-size: 40px;
+  }
+  .grid-container {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 4rem;
+    border-radius: 10px;
+  }
+  .more-articles {
+    margin-right: 0.5em;
+    margin-top: 3em;
+    font-size: 18px;
+    text-align: end;
+    a {
+      text-decoration: none;
+      color: black;
+      font-weight: 700;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: 1450px) {
+  .articles-grid {
+    .grid-container {
+      grid-template-columns: 2fr 2fr;
+      justify-items: center;
+    }
+  }
+}
+
+@media (max-width: 1028px) {
+  .articles-grid {
+    padding: 0 1.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  .articles-grid {
+    h2 {
+      text-align: center;
+    }
+    .grid-container {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .articles-grid {
+    padding: 0 0.5em;
+  }
+}

@@ -1,0 +1,153 @@
+@import "../global.scss";
+
+.tab {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  margin: 3rem 0;
+  h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+    height: 55px;
+  }
+  &__photo {
+    border-radius: 10px;
+    width: 150px;
+    margin: auto;
+  }
+  &__brand {
+    height: 40px;
+    width: 80px;
+  }
+  &__coeur {
+    width: 33%;
+    border-radius: 10px 0 0 10px;
+    padding: 1em 0 2em;
+    &-flex {
+      width: 100%;
+      display: inline-grid;
+      gap: 25px;
+      margin-bottom: 25px;
+      &__mname {
+        font-weight: 600;
+        font-size: 17px;
+      }
+    }
+    &-store {
+      padding: 1em 0.5em;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+  &__rapport {
+    width: 33%;
+    padding: 1em 0 2em;
+    &-flex {
+      width: 100%;
+      display: inline-grid;
+      gap: 25px;
+      margin-bottom: 25px;
+      &__mname {
+        font-weight: 600;
+        font-size: 17px;
+      }
+    }
+    &-store {
+      padding: 1em 0.5em;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+  &__choix {
+    width: 33%;
+    border-radius: 0 10px 10px 0;
+    padding: 1em 0 2em;
+    &-flex {
+      width: 100%;
+      display: inline-grid;
+      gap: 25px;
+      margin-bottom: 25px;
+      &__mname {
+        font-weight: 600;
+        font-size: 17px;
+      }
+    }
+    &-store {
+      padding: 1em 0.5em;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+}
+
+.tab__coeur:hover,
+.tab__rapport:hover,
+.tab__choix:hover {
+  background-color: rgba(41, 37, 37, 0.132);
+}
+
+.anchor a {
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  color: #fff;
+  background-color: rgb(248, 113, 35);
+}
+
+.anchor a:hover {
+  opacity: 0.8;
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1200px) {
+  .anchor a {
+    font-size: 13px;
+    padding: 0.4em 0.8em;
+  }
+}
+
+@media (max-width: 1100px) {
+  .tab {
+    &__coeur-flex__mname,
+    &__rapport-flex__mname,
+    &__choix-flex__mname {
+      height: 50px;
+    }
+    &__coeur-store,
+    &__rapport-store,
+    &__choix-store {
+      padding: 0.4em;
+      padding: 0.6em 0;
+      justify-content: space-evenly;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .tab {
+    align-items: center;
+    flex-direction: column;
+    &__coeur,
+    &__rapport,
+    &__choix {
+      width: 100%;
+      max-width: 400px;
+    }
+    &__coeur {
+      border-radius: 10px 10px 0 0;
+    }
+    &__choix {
+      border-radius: 0 0 10px 10px;
+    }
+
+    &__coeur-store,
+    &__rapport-store,
+    &__choix-store {
+      padding: 0.6em 0;
+    }
+  }
+}

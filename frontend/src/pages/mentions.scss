@@ -1,0 +1,22 @@
+@import "../global.scss";
+
+.mentions {
+  padding: 0 4em;
+  margin: 3em 0;
+
+  &-text {
+    background-color: $fond-color;
+    padding: 2em 2.5em;
+    border-radius: 10px;
+    box-shadow: 3px 0px 5px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    &-title {
+      margin-top: 1em;
+      text-align: center;
+    }
+    p,
+    ul {
+      @extend .textline;
+    }
+  }
+}

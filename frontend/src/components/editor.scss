@@ -1,0 +1,21 @@
+@import "../global.scss";
+
+.form-container {
+  margin: 1em;
+}
+.wrapper-class,
+.editor-class,
+.toolbar-class {
+  border: 2px solid black;
+}
+
+.form-flex {
+  display: flex;
+  flex-direction: column;
+  label {
+    margin: 0 0 2em;
+  }
+  h3 {
+    margin: 0.5em 0;
+  }
+}

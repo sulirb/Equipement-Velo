@@ -1,0 +1,35 @@
+{
+  "name": "Équipement Vélo",
+  "short_name": "Équipement Vélo",
+  "description": "Découvrez les meilleurs conseils d'équipement vélo pour choisir les casques, lunettes, vêtements et chaussures adaptés à votre style et à vos besoins. Rendez votre expérience cycliste plus sûre et plus confortable avec nos recommandations expertes.",
+  "lang": "fr",
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "theme_color": "#f87123",
+  "display": "standalone",
+  "display_override": ["fullscreen", "minimal-ui"],
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/velowheel.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "favicon": "/favicon.ico",
+  "prefer_related_applications": false,
+  "accessibility": [
+    {
+      "feature": "keyboard",
+      "value": true
+    },
+    {
+      "feature": "screen-reader",
+      "value": true
+    }
+  ],
+  "performance": {
+    "optimized": true,
+    "fast_load": true
+  }
+}

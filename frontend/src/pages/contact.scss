@@ -1,0 +1,75 @@
+@import "../global.scss";
+
+.basic-input-textarea {
+  font-family: "Montserrat", sans-serif;
+  border-radius: 10px;
+  padding: 1em 0.5em;
+  border: 1px solid black;
+  font-size: 16px;
+}
+
+.contact-title {
+  margin-top: 4.5em;
+  text-align: center;
+}
+
+.contact-form {
+  text-align: center;
+  margin: 0 auto 2rem;
+  max-width: 600px;
+
+  input {
+    @extend .basic-input-textarea;
+  }
+  input[type="text"] {
+    height: 52.8px;
+  }
+  textarea {
+    @extend .basic-input-textarea;
+    height: 200px;
+  }
+
+  &__flex,
+  &__first {
+    width: -webkit-fill-available;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+.contact-enterMessage {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: $back-color1;
+}
+
+.confirm-box {
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+  background-color: $fond-color;
+  color: $back-color1;
+  &__alert {
+    background-color: black;
+    margin-bottom: 5rem;
+    padding: 2rem;
+    border: 1px black solid;
+    border-radius: 10px;
+  }
+}
+button {
+  margin-top: 1em;
+  margin: 1em auto 0;
+  border-radius: 10px;
+  padding: 0.8em 1.5em;
+  font-size: 16px;
+  background-color: $back-color1;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  &:hover {
+    opacity: 0.8;
+  }
+}

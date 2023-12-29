@@ -1,0 +1,172 @@
+[
+  {
+    "slug": "chaussures-fizik",
+    "modeles": [
+      "Fizik Tempo Powerstrap R5",
+      "Fizik Tempo Overcurve R5",
+      "Fizik Infinito Carbon"
+    ],
+    "photos": [
+      "https://d2wax9jsznmsse.cloudfront.net/media/catalog/product/cache/02965f21d3991a5152c710fb6088079b/t/e/tempo-pwstr-r5-reflective_side_floating_1.jpg",
+      "https://d2wax9jsznmsse.cloudfront.net/media/catalog/product/cache/02965f21d3991a5152c710fb6088079b/t/e/tempo-r5-overcurve-cycling-shoes-metallic-gun_side_floating.jpg",
+      ""
+    ],
+    "revendeurs": [
+      {
+        "nom": "../src/assets/amazon-logo.png",
+        "link": [
+          "https://www.amazon.fr/Fizik-Powerstrap-Chaussures-Chaussure-réfléchissant/dp/B07Z9YFSM9",
+          "https://www.amazon.fr/Fizik-Tempo-Overcurve-2020-Noir/dp/B083ZK4TGZ",
+          "https://www.amazon.fr/Fizik-Shoes-Vento-Infinito-Carbon/dp/B08QW86QKP"
+        ]
+      },
+      {
+        "nom": "../src/assets/alltricks-logo.png",
+        "link": [
+          "https://www.alltricks.fr/F-10006-chaussures-velo/P-1228518-chaussures_route_fizik_tempo_powerstrap_r5_gris_reflective",
+          "https://www.alltricks.fr/F-10006-chaussures-velo/P-1228514-chaussures_route_fizik_tempo_overcurve_r5_noir",
+          "https://www.alltricks.fr/F-10006-chaussures-velo/P-1759549-chaussures_route_fizik_infinito_carbon_2_noir"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "chaussures-gaerne",
+    "modeles": ["Gaerne G.Tornado", "Gaerne G.Record", "Gaerne G.Fuga"],
+    "photos": [
+      "https://cdn.rosebikes.de/images/74AE75BC247717CF2C7B0EF8F472C3DD.png",
+      "https://www.all4cycling.com/cdn/shop/products/g.record-lady-bianco-22_1800x1800.jpg",
+      "https://www.materiel-velo.com/93180-large_default/chaussures-velo-route-gaerne-carbon-gfuga-2023.jpg"
+    ],
+    "revendeurs": [
+      {
+        "nom": "../src/assets/amazon-logo.png",
+        "link": [
+          "",
+          "",
+          "https://www.amazon.fr/Gaerne-3615-004-42-Chaussures-Carbon-G-Kona/dp/B0C2ZQ1ZQS/"
+        ]
+      },
+      {
+        "nom": "../src/assets/alltricks-logo.png",
+        "link": [
+          "https://www.alltricks.fr/F-10006-chaussures-velo/P-2104109-chaussures_route_gaerne_g_tornado_large_noir_mat",
+          "https://www.alltricks.fr/F-10006-chaussures-velo/P-2702770-paire_de_chaussures_route_gaerne_g_record_blanc",
+          "https://www.alltricks.fr/F-10006-chaussures-velo/P-2474696-chaussures_route_gaerne_carbon_g_fuga_blanc_mat"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "chaussures-mavic",
+    "modeles": [
+      "Mavic Cosmic Elite SL",
+      "Mavic Cosmic Boa",
+      "Mavic Cosmic Ultimate"
+    ],
+    "photos": [
+      "https://cdn.mavic.com/media/cache/resolve/default/dam/S000041_0.png",
+      "https://cdn.mavic.com/media/cache/resolve/default/dam/S000039_0.png",
+      "https://cdn.mavic.com/media/cache/resolve/default/dam/409321_0.png"
+    ],
+    "revendeurs": [
+      {
+        "nom": "../src/assets/amazon-logo.png",
+        "link": []
+      },
+      {
+        "nom": "../src/assets/alltricks-logo.png",
+        "link": [
+          "https://www.alltricks.fr/F-10006-chaussures-velo/P-2579471-chaussures_route_mavic_cosmic_elite_sl_noir",
+          "https://www.alltricks.fr/F-10006-chaussures-velo/P-1907144-chaussures_route_mavic_cosmic_boa_blanc",
+          "https://www.alltricks.fr/F-10006-chaussures-velo/P-1389916-paire_chaussures_route_mavic_cosmic_ultimate_iii_noir"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "chaussures-northwave",
+    "modeles": [
+      "Northwave Core Plus 2",
+      "Northwave Jet 2",
+      "Northwave Extreme Pro 2"
+    ],
+    "photos": [
+      "https://www.northwave.com/3046-large_default/core-plus-2.jpg",
+      "https://www.northwave.com/3894-large_default/jet-2.jpg",
+      "https://www.northwave.com/4886-large_default/extreme-pro-2.jpg"
+    ],
+    "revendeurs": [
+      {
+        "nom": "../src/assets/amazon-logo.png",
+        "link": [
+          "https://www.amazon.fr/Northwave-Chaussures-Route-Sport-Mixte/dp/B08KTH5MWT",
+          "https://www.amazon.fr/Northwave-Jet-2-Chaussures-Cyclisme/dp/B07HMDYC89",
+          "https://www.amazon.fr/Northwave-Extreme-PRO-Anthra-Chaussures/dp/B09D7PHZR2/"
+        ]
+      },
+      {
+        "nom": "../src/assets/alltricks-logo.png",
+        "link": [
+          "https://www.alltricks.fr/F-10006-chaussures-velo/P-1668690-chaussures_northwave_core_plus_2_blanc_noir",
+          "https://www.alltricks.fr/F-10006-chaussures-velo/P-492802-chaussures_route_northwave_jet_2_noir",
+          "https://www.alltricks.fr/F-10006-chaussures-velo/P-1971848-chaussures_northwave_extreme_pro_2_gris"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "chaussures-shimano",
+    "modeles": ["Shimano RC502", "Shimano RC100", "Shimano S-Phyre"],
+    "photos": [
+      "https://dassets.shimano.com/content/dam/global/cg1SHICCycling/final/products/cg2SHICLifeStyleGear/cg3SHICFootwear/cg4SHICShoes/cg5SHICShoes/SH-RC502-shic8-primary_1.jpg/jcr:content/renditions/SH-RC502-shic8-primary_1_750_750.jpeg",
+      "https://dassets.shimano.com/content/dam/global/cg1SHICCycling/final/products/cg2SHICLifeStyleGear/cg3SHICFootwear/cg4SHICShoes/cg5SHICShoes/SH-RC100_C89_1.jpg/jcr:content/renditions/SH-RC100_C89_1_750_750.jpeg",
+      "https://dassets.shimano.com/content/dam/global/cg1SHICCycling/final/products/cg2SHICLifeStyleGear/cg3SHICFootwear/cg4SHICShoes/cg5SHICShoes/SH-RC903-shic8-primary_1.jpg/jcr:content/renditions/SH-RC903-shic8-primary_1_750_750.jpeg"
+    ],
+    "revendeurs": [
+      {
+        "nom": "../src/assets/amazon-logo.png",
+        "link": [
+          "https://www.amazon.fr/Shimano-Zapatillas-SH-RC502-Chaussure-Cyclisme/dp/B09771Q7YN",
+          "https://www.amazon.fr/SHIMANO-Baskets-Rc100-Mixte-Marine/dp/B08HYVZPK4",
+          "https://www.amazon.fr/SHIMANO-Mixte-Chaussures-Sh-rc903-Cyclisme/dp/B0BFGDFZ5F"
+        ]
+      },
+      {
+        "nom": "../src/assets/alltricks-logo.png",
+        "link": [
+          "https://www.alltricks.fr/F-10006-chaussures-velo/P-1970469-paire_de_chaussures_route_shimano_rc502_bleu",
+          "https://www.alltricks.fr/F-10006-chaussures-velo/P-1600811-chaussures_de_route_shimano_rc100_bleu_navy",
+          "https://www.alltricks.fr/F-10006-chaussures-velo/P-2599300-chaussures_homme_shimano_rc9_s_phyre_noir"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "chaussures-sidi",
+    "modeles": ["Sidi Fast", "Sidi Alba 2", "Sidi Sixty"],
+    "photos": [
+      "https://m.media-amazon.com/images/I/81Si3BCv34L._AC_SX695_.jpg",
+      "https://m.media-amazon.com/images/I/51yeixRN0BL._AC_SX569_.jpg",
+      "https://m.media-amazon.com/images/I/81Yc6-JJ+ZL._AC_SX569_.jpg"
+    ],
+    "revendeurs": [
+      {
+        "nom": "../src/assets/amazon-logo.png",
+        "link": [
+          "https://www.amazon.fr/Sidi-ZAPATILLAS-FAST-NEGRO-T-45/dp/B08NFKQB3D",
+          "https://www.amazon.fr/Sidi-ALBA-2-Alba/dp/B07ZM3RM26",
+          "https://www.amazon.fr/ZAPATILLA-SIDI-SIXTY-NEGRO-AZUL/dp/B085HJY9YJ/"
+        ]
+      },
+      {
+        "nom": "../src/assets/alltricks-logo.png",
+        "link": [
+          "https://www.alltricks.fr/F-10006-chaussures-velo/P-1651584-chaussures_route_sidi_fast_noir",
+          "https://www.alltricks.fr/F-10006-chaussures-velo/P-1651578-chaussures_route_sidi_alba_2_blanc___noir",
+          "https://www.alltricks.fr/F-10006-chaussures-velo/P-1381856-paire_de_chaussures_sidi_sixty_noir_petrol"
+        ]
+      }
+    ]
+  }
+]
