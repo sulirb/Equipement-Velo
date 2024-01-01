@@ -13,8 +13,8 @@ RUN npm install
 # Copie le reste des fichiers de l'application dans le répertoire de travail
 COPY . .
 
-# Expose le port 3210 sur le conteneur
-EXPOSE 3210
+# Expose le port 4000 sur le conteneur
+EXPOSE 4000
 
-# Démarre l'application quand le conteneur est lancé
-CMD ["npm", "run", "dev"]
+# Démarre le serveur Node.js avec la commande 'npm start'
+CMD ["npm", "start"]
