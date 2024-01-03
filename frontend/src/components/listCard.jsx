@@ -19,7 +19,6 @@ function Card({ picture, title, href, content }) {
               __html: content.replace(/<[^>]*>/g, "").substring(0, 200) + "...",
             }}
           ></div>
-          <div className="listcard__flex-end"></div>
         </div>
       </div>
     </Link>

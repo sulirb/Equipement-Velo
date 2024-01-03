@@ -55,6 +55,10 @@
 
 @media (max-width: 768px) {
   .header {
+    &__logo img {
+      width: 200px;
+      margin-top: 0.5rem;
+    }
     .menu-toggle {
       font-size: 30px;
       color: white;

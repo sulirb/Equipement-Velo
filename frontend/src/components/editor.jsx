@@ -103,7 +103,7 @@ const MyEditor = () => {
           </label>
           <div>
             <h3>Guidelines :</h3>
-            <p>Photo du titre à upload en 2:1</p>
+            <p>Photo du titre à upload en 16:9</p>
             <p>Commencer les titres par h3</p>
           </div>
           <label>

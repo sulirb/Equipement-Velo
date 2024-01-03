@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .card {
-  height: 275px;
+  height: 300px;
   max-width: 400px;
   border-radius: 10px 10px 0 0;
   background-color: $fond-color;
@@ -15,7 +15,7 @@
 
   img {
     width: 400px;
-    height: 200px;
+    height: 225px;
     object-fit: fill;
     border-radius: 10px 10px 0 0;
   }
@@ -59,8 +59,10 @@
 @media screen and (max-width: 520px) {
   .card {
     max-width: 250px;
+    height: 200px;
     img {
       width: 250px;
+      height: 140px;
     }
   }
 }
