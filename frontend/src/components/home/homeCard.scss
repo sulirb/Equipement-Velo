@@ -11,13 +11,13 @@
   .card__container {
     border-radius: 5px;
     display: inline-block;
+    background-color: $fond-color;
   }
 
   img {
     width: 400px;
     height: 225px;
     object-fit: fill;
-    border-radius: 10px 10px 0 0;
   }
 
   .card__container__title {
@@ -26,7 +26,7 @@
   }
 
   .card__container__title__span {
-    font-size: 18px;
+    font-size: 21px;
     font-weight: bold;
     color: #333;
     margin: 0;
@@ -58,11 +58,9 @@
 
 @media screen and (max-width: 520px) {
   .card {
-    max-width: 250px;
-    height: 200px;
     img {
-      width: 250px;
-      height: 140px;
+      width: 100%;
+      max-width: 420px;
     }
   }
 }

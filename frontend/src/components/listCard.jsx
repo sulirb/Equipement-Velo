@@ -2,8 +2,6 @@ import PropTypes from "prop-types";
 import "./listCard.scss";
 import { Link } from "react-router-dom";
 
-// use state pour limiter le nombre de caractères de content
-
 function Card({ picture, title, href, content }) {
   return (
     <Link to={href} className="anchor-listcard">

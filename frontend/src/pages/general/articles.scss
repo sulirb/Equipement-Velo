@@ -22,12 +22,16 @@
 
 @media (max-width: 768px) {
   .articles-list {
-    padding: 2em;
+    padding: 1em 1em 2em;
   }
 }
 
 @media (max-width: 480px) {
   .articles-list h2 {
-    font-size: 27px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .list-container {
+    gap: 1.5em;
   }
 }
