@@ -32,7 +32,7 @@ const SubmitImage = () => {
     formData.append("title", title);
     formData.append("image", file);
 
-    fetch("http://localhost:4000/images", {
+    fetch("http://localhost:80/images", {
       headers: {
         Authorization: `Bearer ${token}`,
       },

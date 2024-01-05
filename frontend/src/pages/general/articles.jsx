@@ -9,7 +9,7 @@ function Articles({ page }) {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:4000/articles/?page=${page}&perPage=20`)
+    fetch(`http://localhost:80/articles/?page=${page}&perPage=20`)
       .then((res) => res.json())
       .then((data) => {
         setArticles(data);

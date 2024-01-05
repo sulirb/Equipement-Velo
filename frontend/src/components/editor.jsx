@@ -54,7 +54,7 @@ const MyEditor = () => {
     formData.append("image", file);
     formData.append("tag", tag);
 
-    fetch("http://localhost:4000/articles", {
+    fetch("http://localhost:80/articles", {
       headers: {
         Authorization: `Bearer ${token}`,
       },

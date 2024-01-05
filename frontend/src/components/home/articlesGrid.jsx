@@ -6,7 +6,7 @@ function ArticlesGrid() {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:4000/articles/latest")
+    fetch("http://localhost:80/articles/latest")
       .then((res) => res.json())
       .then((data) => setArticles(data));
   }, []);

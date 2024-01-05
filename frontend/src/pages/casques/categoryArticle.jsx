@@ -15,7 +15,7 @@ function CasqueArticle() {
   const token = cookies.token;
 
   useEffect(() => {
-    fetch(`http://localhost:4000/article/${slug}`)
+    fetch(`http://localhost:80/article/${slug}`)
       .then((res) => {
         if (!res.ok) {
           throw new Error("404 Not Found");
@@ -37,7 +37,7 @@ function CasqueArticle() {
   }, [slug]);
 
   const deleteArticle = () => {
-    fetch(`http://localhost:4000/article/${slug}`, {
+    fetch(`http://localhost:80/article/${slug}`, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${token}`,
