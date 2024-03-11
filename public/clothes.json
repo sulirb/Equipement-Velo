@@ -1,0 +1,284 @@
+[
+  {
+    "slug": "vetements-ale",
+    "modeles": ["Alé Logo", "Alé Turbo", "Alé Strada"],
+    "photos": [
+      "https://cdn.deporvillage.com/cdn-cgi/image/h=1800,w=1800,dpr=1,f=auto,q=75,fit=contain,background=white/product/ale-l22145400_001.jpg",
+      "https://www.bfgcdn.com/600_600_90/056-2192-0211/ale-turbo-jersey-maillot-de-cyclisme.jpg",
+      "https://www.tradeinn.com/f/13671/136712061/ale-cuissard-a-bretelles-strada.jpg"
+    ],
+    "revendeurs": [
+      {
+        "nom": "/amazon-logo.png",
+        "link": [
+          "https://www.amazon.fr/ALE-Maillot-Manches-Courtes-Blanc/dp/B0B46Z96RN",
+          "https://www.amazon.fr/Alé-Cycling-Manches-Courtes-Cyclisme/dp/B09TZY3RHP",
+          "https://www.amazon.fr/Alé-15042318-Cuissard-court-homme-Noir/dp/B07BGXQNWX/"
+        ]
+      },
+      {
+        "nom": "/alltricks-logo.png",
+        "link": [
+          "https://www.alltricks.fr/F-32744-textile-hauts/P-2139998-maillot_manches_courtes_ale_logo_blanc",
+          "https://www.alltricks.fr/F-32744-textile-hauts/P-2139978-maillot_manches_courtes_ale_turbo_bleu",
+          "https://www.alltricks.fr/F-41500-textile-bas/P-2140195-cuissard_ale_strada_noir_rouge"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "vetements-assos",
+    "modeles": [
+      "Assos Equipe RS S9",
+      "Assos Mille GT C2",
+      "Assos Equipe RSR S9"
+    ],
+    "photos": [
+      "https://www.materiel-velo.com/47795-large_default/cuissard-court-velo-assos-equipe-rs-s9.jpg",
+      "https://media.alltricks.com/large/218488561bb2156115053.01574866.jpg",
+      "https://media.alltricks.com/large/218489061bb214f4ade21.45783255.jpg"
+    ],
+    "revendeurs": [
+      {
+        "nom": "/amazon-logo.png",
+        "link": []
+      },
+      {
+        "nom": "/alltricks-logo.png",
+        "link": [
+          "https://www.alltricks.fr/F-41500-textile-bas/P-2512482-cuissard_assos_equipe_rs_bib_shorts_s9_targa_dam_bleu",
+          "https://www.alltricks.fr/F-41500-textile-bas/P-2039808-cuissard_assos_mille_gt_c2_noir",
+          "https://www.alltricks.fr/F-41500-textile-bas/P-2039813-cuissard_assos_equipe_rsr_s9_targa_noir"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "vetements-castelli",
+    "modeles": [
+      "Castelli Free Aero RC",
+      "Castelli Classifica",
+      "Castelli Premio Black"
+    ],
+    "photos": [
+      "https://m.media-amazon.com/images/I/41IxSm7IKqL._AC_.jpg",
+      "https://m.media-amazon.com/images/I/51DlDMOwaIL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/51c-DFIMTqL._AC_SY879_.jpg"
+    ],
+    "revendeurs": [
+      {
+        "nom": "/amazon-logo.png",
+        "link": [
+          "https://www.amazon.fr/CASTELLI-4523002-123-BIBSHORT-Shorts-Black/dp/B0BRVF96F8",
+          "https://www.amazon.fr/CASTELLI-CLASSIFICA-Jersey-T-Shirt-Light/dp/B08THRM1J1",
+          "https://www.amazon.fr/CASTELLI-Premio-Black-Bibshort-Shorts/dp/B08THSG5RT/"
+        ]
+      },
+      {
+        "nom": "/alltricks-logo.png",
+        "link": [
+          "https://www.alltricks.fr/F-41500-textile-bas/P-2042065-cuissard_castelli_free_aero_rc_noir",
+          "https://www.alltricks.fr/F-32744-textile-hauts/P-2041858-maillot_manches_courtes_castelli_classifica_rouge",
+          "https://www.alltricks.fr/F-41500-textile-bas/P-2463983-cuissard_court_castelli_premio_black_edition_limitee_noir_blanc"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "vetements-endura",
+    "modeles": [
+      "Endura Primaloft Pro SL II",
+      "Endura Xtract II",
+      "Endura MT500 II"
+    ],
+    "photos": [
+      "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12922498-2105089641670743.jpg",
+      "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12926408-5364849104183432.jpg",
+      "https://static.thcdn.com/images/large/original//productimg/1600/1600/14876570-3155089630702755.jpg"
+    ],
+    "revendeurs": [
+      {
+        "nom": "/amazon-logo.png",
+        "link": [
+          "https://www.amazon.fr/Endura-Primaloft-Gilet-pour-homme/dp/B083WPQJQ3",
+          "https://www.amazon.fr/Endura-Xtract-Short-Cyclisme-X-Large/dp/B07P9G9Z4K/",
+          "https://www.amazon.fr/dp/B0CF3JCMNJ/"
+        ]
+      },
+      {
+        "nom": "/alltricks-logo.png",
+        "link": [
+          "https://www.alltricks.fr/F-32744-textile-hauts/P-1026593-gilet_endura_pro_sl_ii_noir",
+          "https://www.alltricks.fr/F-41500-textile-bas/P-709096-sous_short_endura_xtract_gel_ii_noir",
+          "https://www.alltricks.fr/F-32744-textile-hauts/P-2690690-veste_impermeable_endura_mt500_ii_orange"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "vetements-gore-wear",
+    "modeles": [
+      "Gore Wear C5 Infinium",
+      "Gore Wear Ambient",
+      "Gore Wear C3 Windstopper"
+    ],
+    "photos": [
+      "https://www.gorewear.com/_next/image?url=https://cdn11.bigcommerce.com/s-vay0d6lrhe/images/stencil/640w/products/439/2723/100640-AY00_main_ph2x__15863.1701262817.png&w=640&q=90&fm=webp",
+      "https://www.gorewear.com/_next/image?url=https://cdn11.bigcommerce.com/s-vay0d6lrhe/images/stencil/640w/products/208/1684/100731-9900_main_g1fo__40271.1701263744.png&w=640&q=90&fm=webp",
+      "https://www.gorewear.com/_next/image?url=https://cdn11.bigcommerce.com/s-vay0d6lrhe/images/stencil/640w/products/160/2447/100337-9900_main_aaej__66807.1692397207.png&w=640&q=90&fm=webp"
+    ],
+    "revendeurs": [
+      {
+        "nom": "/amazon-logo.png",
+        "link": [
+          "https://www.amazon.fr/GORE-WEAR-Gore-TEX-INFINIUM-Jackets/dp/B082YDD61C",
+          "https://www.amazon.fr/GORE-WEAR-Cyclisme-GORE-TEX-INFINIUM/dp/B08DS596RL",
+          "https://www.amazon.fr/GORE-WEAR-WINDSTOPPER-Collant-bretelles/dp/B077Y2R24F"
+        ]
+      },
+      {
+        "nom": "/alltricks-logo.png",
+        "link": [
+          "https://www.alltricks.fr/F-32744-textile-hauts/P-2413212-veste_gore_wear_c5_gore_tex_infinium_thermo_orange",
+          "https://www.alltricks.fr/F-32744-textile-hauts/P-1682407-veste_gore_wear_ambient_noir",
+          "https://www.alltricks.fr/F-41500-textile-bas/P-1171225-cuissard_long_gore_wear_c3_windstopper_bib_tights__noir"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "vetements-le-col",
+    "modeles": [
+      "Cuissard Le Col Sport II",
+      "Maillot Le Col Sport",
+      "Maillot Le Col Hors Catégorie II"
+    ],
+    "photos": [
+      "https://lecol.cc/cdn/shop/products/LeCol_Mens_Sport_Bib_Shorts_NavySaffron_Side_704x704_crop_center.png?v=1680526073",
+      "https://lecol.cc/cdn/shop/files/LeCol_Sport_Jersey_NavySaffron_Side_704x704_crop_center.png?v=1695036764",
+      "https://lecol.cc/cdn/shop/products/SS22_LeCol_Mens_HC2_jersey_orange_S_704x704_crop_center.png?v=1679579208"
+    ],
+    "revendeurs": [
+      {
+        "nom": "/amazon-logo.png",
+        "link": []
+      },
+      {
+        "nom": "/alltricks-logo.png",
+        "link": [
+          "https://www.alltricks.fr/F-41500-textile-bas/P-2576971-cuissard_court_a_bretelles_le_col_sport_ii_bleu_navy_orange",
+          "https://www.alltricks.fr/F-32744-textile-hauts/P-2576840-maillot_manches_courtes_le_col_sport_bleu_orange",
+          "https://www.alltricks.fr/F-32744-textile-hauts/P-2576851-maillot_manches_courtes_le_col_hors_categorie_ii_orange"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "vetements-q36-5",
+    "modeles": [
+      "Q36.5 Pinstripe PRO",
+      "Q36.5 0 Mesh Sans manches",
+      "Q36.5 Dottore"
+    ],
+    "photos": [
+      "https://www.q36-5.com/thumbnail/c9/78/c8/1690284405/Progetto-senza-titolo-269_1920x1920.webp",
+      "https://www.q36-5.com/thumbnail/99/38/97/1690201944/mens_base_layer_zero_mesh_navy_089.9_front_1920x1920.webp",
+      "https://www.q36-5.com/thumbnail/d6/36/33/1690202867/mens-cycling-bib-shorts-dottore-black_1920x1920.webp"
+    ],
+    "revendeurs": [
+      {
+        "nom": "/amazon-logo.png",
+        "link": []
+      },
+      {
+        "nom": "/alltricks-logo.png",
+        "link": [
+          "https://www.alltricks.fr/F-32744-textile-hauts/P-2602166-maillot_manches_courtes_q36_5_pinstripe_pro_rouge",
+          "https://www.alltricks.fr/F-32744-textile-hauts/P-2602162-baselayer_sans_manches_q36_5_zero_mesh_bleu_navy",
+          "https://www.alltricks.fr/F-41500-textile-bas/P-2601648-cuissard_court_a_bretelles_q36_5_dottore_l1_noir"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "vetements-rapha",
+    "modeles": ["Casquette Rapha Cap II", "Rapha Core", "Rapha Cargo"],
+    "photos": [
+      "https://img01.ztat.net/article/spp-media-p1/7bb53ace094940229a6cf5d381615988/d127c88fa02c4a5786f1a0c78d84e598.jpg",
+      "https://img01.ztat.net/article/spp-media-p1/f265d2c893384998bf09f92a72d1f372/0d9613c953684e27a47dc5ffa5ddab29.jpg",
+      "https://media.rapha.cc/image/upload/ar_1:1,c_fill,f_auto,q_auto,w_360,dpr_2.0/v1673364759/mannequin/CBS01RG_BLK_Cargo-Bib-Shorts_H120_mannequin_1.jpg"
+    ],
+    "revendeurs": [
+      {
+        "nom": "/amazon-logo.png",
+        "link": []
+      },
+      {
+        "nom": "/alltricks-logo.png",
+        "link": [
+          "https://www.alltricks.fr/F-32734-bonneterie-_-manchettes-_-jambieres/P-2708809-casquette_rapha_cap_ii_bleu_fonce_bleu",
+          "https://www.alltricks.fr/F-32744-textile-hauts/P-2575149-maillot_manches_courtes_rapha_core_bleu_navy",
+          "https://www.alltricks.fr/F-41500-textile-bas/P-2575276-cuissard_court_a_bretelles_rapha_cargo_gris_fonce"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "vetements-santini",
+    "modeles": [
+      "Santini Nebula Puro",
+      "Santini Colore Puro",
+      "Santini Karma Delta"
+    ],
+    "photos": [
+      "https://www.santinicycling.com/137551-large_default/nebula-gilet-coupe-vent.jpg?v=4",
+      "https://www.santinicycling.com/105232-large_default/colore-puro-maillot.jpg?v=4",
+      "https://www.santinicycling.com/134484-large_default/karma-delta-cuissard.jpg?v=4"
+    ],
+    "revendeurs": [
+      {
+        "nom": "/amazon-logo.png",
+        "link": [
+          "https://www.amazon.fr/Santini-Nebula-Puro-Gilet-Anti-Stress-Homme/dp/B0B71KVNDL",
+          "https://www.amazon.fr/Santini-Colore-Maillot-manches-courtes/dp/B09V7SH8M1",
+          "https://www.amazon.fr/Santini-Karma-Delta-Cuissard-Homme/dp/B08Y5C9Q43"
+        ]
+      },
+      {
+        "nom": "/alltricks-logo.png",
+        "link": [
+          "https://www.alltricks.fr/F-32744-textile-hauts/P-2709514-veste_coupe_vent_santini_nebula_orange",
+          "https://www.alltricks.fr/F-32744-textile-hauts/P-2543557-maillot_manches_courtes_santini_colore_puro_bleu",
+          "https://www.alltricks.fr/F-41500-textile-bas/P-2568558-cuissard_court_a_bretelles_santini_karma_delta_gris"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "vetements-sportful",
+    "modeles": ["Sportful Giara", "Sportful Rocket", "Sportful Supergiara"],
+    "photos": [
+      "https://m.media-amazon.com/images/I/51sqUQtseDL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/51y214N535L._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81Z9brvLf3L._AC_SX679_.jpg"
+    ],
+    "revendeurs": [
+      {
+        "nom": "/amazon-logo.png",
+        "link": [
+          "https://www.amazon.fr/Sportful-Maillot-Giara-Bordeaux-vert/dp/B091XTC7BS",
+          "https://www.amazon.fr/dp/B0CHWK2MVM",
+          "https://www.amazon.fr/Sportful-Supergiara-XXL/dp/B07SQHY3C7"
+        ]
+      },
+      {
+        "nom": "/alltricks-logo.png",
+        "link": [
+          "https://www.alltricks.fr/F-32744-textile-hauts/P-2555557-maillot_manches_courtes_sportful_giara_noir",
+          "https://www.alltricks.fr/F-32744-textile-hauts/P-2555592-maillot_manches_courtes_sportful_rocket_violet_bleu",
+          "https://www.alltricks.fr/F-41500-textile-bas/P-2555644-cuissard_court_a_bretelles_sportful_supergiara_noir"
+        ]
+      }
+    ]
+  }
+]

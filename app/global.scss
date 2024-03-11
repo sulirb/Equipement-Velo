@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+$back-color1: rgb(248, 113, 35);
+$fond-color: rgb(246, 246, 246);
+$back-article-color: #e9eaed;
+
+.textline {
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}

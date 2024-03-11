@@ -1,0 +1,100 @@
+@import "../app/global.scss";
+
+.listcard {
+  height: 225px;
+  box-shadow: 3px 0px 5px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  display: flex;
+  .listcard__container {
+    border-radius: 5px;
+    display: inline-block;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+  }
+  img {
+    width: 400px;
+    height: 100%;
+  }
+
+  &__flex {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+
+    &-title {
+      font-size: 20px;
+      margin: 0 0 2em;
+      color: black;
+    }
+    &-content {
+      color: black;
+      font-size: 18px;
+    }
+  }
+}
+
+.anchor-listcard {
+  text-decoration: none;
+  &:hover {
+    opacity: 0.8;
+    transform: scale3d(1.01, 1.01, 1.01);
+  }
+}
+
+@media (max-width: 1028px) {
+  .listcard {
+    height: 197px;
+    img {
+      width: 350px;
+    }
+    &__flex-content {
+      font-size: 15px;
+    }
+    &__flex-title {
+      margin: 0 0 1em;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .listcard {
+    img {
+      object-fit: cover;
+      width: 200px;
+    }
+    &__flex {
+      padding: 1em 0.5em;
+    }
+    &__flex-content {
+      font-size: 13px;
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .listcard {
+    height: 145px;
+    &__image {
+      width: 50%;
+    }
+    img {
+      max-width: 200px;
+      width: 100%;
+      object-fit: cover;
+    }
+    &__flex {
+      width: 50%;
+      justify-content: center;
+      padding: 0.5em;
+      &-content {
+        display: none;
+      }
+      &-title {
+        margin: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+@import "../../app/global.scss";
+
+.card {
+  height: 300px;
+  max-width: 400px;
+  border-radius: 20px;
+  background-color: $fond-color;
+  box-shadow: 3px 0px 5px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+
+  .card__container {
+    border-radius: 5px;
+    display: inline-block;
+    background-color: $fond-color;
+  }
+
+  img {
+    border-radius: 10px 10px 0 0;
+    width: 400px;
+    height: 225px;
+    object-fit: fill;
+  }
+
+  .card__container__title {
+    display: inline-block;
+    padding: 0 10px;
+  }
+
+  .card__container__title__span {
+    font-size: 21px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+}
+
+.card:hover {
+  opacity: 0.8;
+  transform: scale3d(1.03, 1.03, 1.03);
+}
+
+@media screen and (max-width: 1028px) {
+  .card {
+    max-width: 300px;
+    img {
+      width: 300px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    max-width: 400px;
+    img {
+      width: 400px;
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .card {
+    img {
+      width: 100%;
+      max-width: 420px;
+    }
+  }
+}

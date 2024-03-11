@@ -1,0 +1,299 @@
+[
+  {
+    "slug": "casques-abus",
+    "modeles": ["Abus Powerdome Ace", "Abus Viantor", "Abus Gamechanger 2.0"],
+    "photos": [
+      "https://www.abus.com/var/StorageStatic/assets/Mobile%20Sicherheit/Helme/Road/PowerDome/Kat2022/91941_POWERDOME_GOLDFISH_SIDE_CMYK_abus_640.png",
+      "https://www.abus.com/var/StorageStatic/assets/Mobile%20Sicherheit/Helme/Road/Viantor/Kat2019/81676_Viantor_gleam_silver_side_abus_640.png",
+      "https://www.abus.com/var/StorageStatic/assets/Mobile%20Sicherheit/Helme/Road/GameChanger%202.0/Kat2023/98006_GAMECHANGER-2.0_SHINY-WHITE_SIDE_abus_640.png"
+    ],
+    "revendeurs": [
+      {
+        "nom": "/amazon-logo.png",
+        "link": [
+          "https://www.amazon.fr/Casque-vélo-course-ABUS-PowerDome/dp/B0BF5H7M4Y",
+          "https://www.amazon.fr/Abus-ABUS-Viantor-MIPS-Casque/dp/B0CB419BNP",
+          "https://www.amazon.fr/ABUS-GameChanger-Casque-Route-Aérodynamique/dp/B0BF5G6FT9?th=1"
+        ]
+      },
+      {
+        "nom": "/alltricks-logo.png",
+        "link": [
+          "https://www.alltricks.fr/F-10007-casques/P-2469019-casque_abus_powerdome_ace_moss_green___vert",
+          "https://www.alltricks.fr/F-10007-casques/P-345665-casque_abus_viantor_noir_mat",
+          "https://www.alltricks.fr/F-10007-casques/P-345672-casque_aero_abus_gamechanger_blanc"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "casques-bell",
+    "modeles": ["Bell Falcon XR Mips", "Bell Avenue", "Bell Formula Mips"],
+    "photos": [
+      "https://bellbikehelmets.fr/cdn/shop/files/PRODUCTIMG_BEHFALXRM_58689_03.jpg?crop=center&v=1690994231&width=1920",
+      "https://bellbikehelmets.fr/cdn/shop/files/PRODUCTIMG_BEHAVE_51794_03.jpg?crop=center&v=1690993515&width=1920",
+      "https://bellbikehelmets.fr/cdn/shop/files/PRODUCTIMG_BEHFORM_47526_03.jpg?crop=center&v=1690993019&width=1920"
+    ],
+    "revendeurs": [
+      {
+        "nom": "/amazon-logo.png",
+        "link": [
+          "https://www.amazon.fr/BELL-Falcon-Casque-Unisexe-Camouflage/dp/B0BDSBX6X3",
+          "https://www.amazon.fr/BELL-Avenue-Mixte-Adulte-Universal-50-57cm/dp/B09JCQGHZK/",
+          "https://www.amazon.fr/Bell-Formule-Mixte-7087942-Silver/dp/B077YC1N8M/"
+        ]
+      },
+      {
+        "nom": "/alltricks-logo.png",
+        "link": [
+          "https://www.alltricks.fr/F-10007-casques/P-2504268-casque_bell_falcon_xr_mips_noir_camo",
+          "https://www.alltricks.fr/F-10007-casques/P-2022445-casque_bell_avenue_mat_bleu",
+          "https://www.alltricks.fr/F-10007-casques/P-2022467-casque_bell_formula_mips_hiviz_noir"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "casques-giro",
+    "modeles": ["Giro Cinder Mips", "Giro Isode", "Giro Eclipse Spherical"],
+    "photos": [
+      "https://www.giro.com/dw/image/v2/BDBJ_PRD/on/demandware.static/-/Sites-giro-master-catalog/default/dwf35fdf9b/images/large/giro-cinder-mips-road-helmet-matte-black-fade-highlight-yellow-hero.jpg?sw=800&sh=800&sm=fit",
+      "https://www.giro.com/dw/image/v2/BDBJ_PRD/on/demandware.static/-/Sites-giro-master-catalog/default/dw52492e3d/images/large/giro-isode-mips-recreational-helmet-matte-titanium-hero.jpg?sw=800&sh=800&sm=fit",
+      "https://www.giro.com/dw/image/v2/BDBJ_PRD/on/demandware.static/-/Sites-giro-master-catalog/default/dw2a8ac8b8/images/large/giro-eclipse-spherical-aero-helmet-matte-ano-blue-hero.jpg?sw=800&sh=800&sm=fit"
+    ],
+    "revendeurs": [
+      {
+        "nom": "/amazon-logo.png",
+        "link": [
+          "https://www.amazon.fr/Giro-Cinder-Casque-Mixte-Blanc/dp/B01M7NIZJH",
+          "https://www.amazon.fr/Giro-Isode-Casque-Mixte-Sizesize/dp/B07771SN8D",
+          "https://www.amazon.fr/Giro-Eclipse-Spherical-Cycling-Helmet/dp/B09KKR9T73"
+        ]
+      },
+      {
+        "nom": "/alltricks-logo.png",
+        "link": [
+          "https://www.alltricks.fr/F-10007-casques/P-1899777-casque_giro_cinder_mips_noir___jaune",
+          "",
+          "https://www.alltricks.fr/F-10007-casques/P-2173326-casque_giro_eclipse_spherical_mips_blanc"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "casques-kask",
+    "modeles": ["Kask Valegro", "Kask Sintesi", "Kask Elemento"],
+    "photos": [
+      "https://www.kask.com/dw/image/v2/BKDG_PRD/on/demandware.static/-/Sites-akeneoCatalog/default/dw80547f23/Assets/valegro_kask_render_side_CHE00052__201/large/a/6/8/3/a6832fd6105c7c5e7a8961b05707d656f756d438_valegro_kask_render_side_CHE00052__201.jpg?sw=565",
+      "https://www.kask.com/dw/image/v2/BKDG_PRD/on/demandware.static/-/Sites-akeneoCatalog/default/dwf951bda5/Assets/sintesi_kask_render_side_CHE00100__210/large/b/6/f/9/b6f9abe9fba9c7c27e3e79f02519b4326dcf130c_sintesi_kask_render_side_CHE00100__210.jpg?sw=565",
+      "https://www.kask.com/dw/image/v2/BKDG_PRD/on/demandware.static/-/Sites-akeneoCatalog/default/dwddd30c78/Assets/elemento_kask_render_side_CHE00101__445/large/b/a/7/f/ba7fbf713ca9823630a324296e23f518ab114d6b_elemento_kask_render_side_CHE00101__445.jpg?sw=565"
+    ],
+    "revendeurs": [
+      {
+        "nom": "/amazon-logo.png",
+        "link": [
+          "https://www.amazon.fr/Kask-Casco-Valegro-Blanco-Gypsum/dp/B09J38LLQX",
+          "https://www.amazon.fr/Casque-Kask-Synthèse-WG11-taille/dp/B0BTDL3NCF",
+          "https://www.amazon.fr/KASK-Elemento-Blue-Casque-Route/dp/B0CDJXN22C/"
+        ]
+      },
+      {
+        "nom": "/alltricks-logo.png",
+        "link": [
+          "https://www.alltricks.fr/F-10007-casques/P-1916511-casque_kask_valegro_wg11_blanc",
+          "https://www.alltricks.fr/F-10007-casques/P-2464386-casque_kask_sintesi_gris",
+          "https://www.alltricks.fr/F-10007-casques/P-2573832-casque_route_kask_elemento_bleu"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "casques-lazer",
+    "modeles": [
+      "Lazer Genesis",
+      "Lazer Strada Kineticore",
+      "Lazer Vento Kineticore"
+    ],
+    "photos": [
+      "https://www.lazersport.com/_assets/images/category/road/helmets/genesis/gallery/new-straps/deep-ocean/my2023_genesis_deepocean_right_1400x1011.jpg",
+      "https://www.lazersport.com/_assets/images/kineticore/helmets/strada/gallery-new-straps/white/thumbs/my2023_strada-kineticore-white_right_1400x1011800x600.jpg",
+      "https://www.lazersport.com/_assets/images/kineticore/helmets/vento/gallery-new-straps/matte-white/thumbs/my2023_vento-kineticore-matte-white_right_1400x1011800x600.jpg"
+    ],
+    "revendeurs": [
+      {
+        "nom": "/amazon-logo.png",
+        "link": [
+          "https://www.amazon.fr/Lazer-Helmet-Genesis-Unisexe-Adulte-Multicolore/dp/B0B34HSR3F/",
+          "https://www.amazon.fr/Lazer-Casco-Strada-Kineticore-Blanco/dp/B09XSPCYST",
+          "https://www.amazon.fr/Lazer-Casco-Vento-Kineticore-Blanco/dp/B09XSRC843/"
+        ]
+      },
+      {
+        "nom": "/alltricks-logo.png",
+        "link": [
+          "https://www.alltricks.fr/F-10007-casques/P-2269960-casque_lazer_genesis_ce",
+          "https://www.alltricks.fr/F-10007-casques/P-2219150-casque_lazer_strada_kineticore_blanc",
+          "https://www.alltricks.fr/F-10007-casques/P-2269961-casque_lazer_vento_kineticore_ce"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "casques-met",
+    "modeles": ["MET Vinci Mips", "MET Idolo", "MET Trenta 3K Carbon Mips"],
+    "photos": [
+      "https://www.met-helmets.com/app/uploads/2020/09/met-vinci-mips-road-cycling-helmet-BL1.jpg",
+      "https://www.met-helmets.com/app/uploads/2023/01/met-idolo-mips-road-cycling-helmet-NO1.jpg",
+      "https://media.met-helmets.com/app/uploads/2023/09/met-trenta-3k-carbon-mips-road-cycling-helmet-WH1.jpg"
+    ],
+    "revendeurs": [
+      {
+        "nom": "/amazon-logo.png",
+        "link": [
+          "https://www.amazon.fr/Met-Helmet-Vinci-Metallic-Glossy/dp/B08KW99NM8/",
+          "https://www.amazon.fr/Idolo-Casque-vélo-Noir-52-59/dp/B01M0TF0PV/",
+          "https://www.amazon.fr/Casque-Trenta-Carbon-Argent-Multicolore/dp/B09T5LY4SX/"
+        ]
+      },
+      {
+        "nom": "/alltricks-logo.png",
+        "link": [
+          "https://www.alltricks.fr/F-10007-casques/P-1876273-casque_met_vinci_mips_bleu_2022",
+          "https://www.alltricks.fr/F-10007-casques/P-2411471-casque_met_idolo_noir_mat_2023",
+          "https://www.alltricks.fr/F-10007-casques/P-2025276-casque_met_trenta_3k_carbon_mips_blanc_argent_mat_2022"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "casques-poc",
+    "modeles": ["Poc Octal X Mips", "Poc Omne Air Mips", "Poc Ventral Mips"],
+    "photos": [
+      "https://www.pocsports.com/cdn/shop/products/10668_OctalXMIPS_1002_UraniumBlack_0001_1200x.png?v=1644855008",
+      "https://www.pocsports.com/cdn/shop/products/10770_OmneAirMIPS_1001_HydrogenWhite_0001_c3c905d4-4a2b-4bd7-968a-1195b57d08dd_1200x.png?v=1701167825",
+      "https://www.pocsports.com/cdn/shop/products/10750_VentralMIPS_1822_CerussiteKashima_MetallicMatt_0001_1200x.png?v=1678355263"
+    ],
+    "revendeurs": [
+      {
+        "nom": "/amazon-logo.png",
+        "link": [
+          "https://www.amazon.fr/POC-Casque-Unisex-Adult-Uranium-59-62cm/dp/B09FTJZ5KW/",
+          "https://www.amazon.fr/POC-Casque-Unisex-Adult-Hydrogen-59-62cm/dp/B09FTGWLGL",
+          "https://www.amazon.fr/POC-Ventral-Unisex-Adult-Uranium-59-62cm/dp/B08V5BR6TJ"
+        ]
+      },
+      {
+        "nom": "/alltricks-logo.png",
+        "link": [
+          "https://www.alltricks.fr/F-10007-casques/P-2469057-casque_poc_octal_x_mips_uranium_noir",
+          "https://www.alltricks.fr/F-10007-casques/P-2035081-casque_poc_omne_air_mips_blanc",
+          "https://www.alltricks.fr/F-10007-casques/P-2469075-casque_poc_ventral_air_mips_aventurine_jaune_mat"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "casques-rudy-project",
+    "modeles": [
+      "Rudy Project Venger",
+      "Rudy Project Rush",
+      "Rudy Project Nytron"
+    ],
+    "photos": [
+      "https://www.rudyproject.com/media/images/catalog/item/xlarge/hl660040.jpg",
+      "https://www.rudyproject.com/media/images/catalog/item/xlarge/hl570150.jpg",
+      "https://www.rudyproject.com/media/images/catalog/item/xlarge/hl770080.jpg"
+    ],
+    "revendeurs": [
+      {
+        "nom": "/amazon-logo.png",
+        "link": [
+          "https://www.amazon.fr/Casque-Rudy-Venger-Yellow-Fluo-Black/dp/B081LKSLTC/",
+          "https://www.amazon.fr/RUDY-PROJECT-CASCO-ROSSONERO-Rosso/dp/B07HY4WJ32",
+          "https://www.amazon.fr/Rudy-Project-Nytron-Casque-Blanc/dp/B09RPHKCK2"
+        ]
+      },
+      {
+        "nom": "/alltricks-logo.png",
+        "link": []
+      }
+    ]
+  },
+  {
+    "slug": "casques-scott",
+    "modeles": ["Scott Tago Plus", "Scott Supra", "Scott Centric Plus"],
+    "photos": [
+      "https://m.media-amazon.com/images/I/71rpknz54QL._AC_SX425_.jpg",
+      "https://m.media-amazon.com/images/I/41l8r4hNf3L._AC_SX425_.jpg",
+      "https://m.media-amazon.com/images/I/615l37BflRL.__AC_SX300_SY300_QL70_ML2_.jpg"
+    ],
+    "revendeurs": [
+      {
+        "nom": "/amazon-logo.png",
+        "link": [
+          "https://www.amazon.fr/Scott-TAGO-Plus-Casque-Orange/dp/B0BXN9ZVHS",
+          "https://www.amazon.fr/SCOTT-Casque-Supra-Radium-Yellow/dp/B08HHDSVVQ",
+          "https://www.amazon.fr/couleur-stealth-black-größe_1-normal/dp/B08HRGBMC7"
+        ]
+      },
+      {
+        "nom": "/alltricks-logo.png",
+        "link": []
+      }
+    ]
+  },
+  {
+    "slug": "casques-smith",
+    "modeles": ["Smith Network", "Smith Signal", "Smith Trace"],
+    "photos": [
+      "https://www.smithoptics.com/dw/image/v2/BDPZ_PRD/on/demandware.static/-/Sites-smith-master-catalog/default/dw4f30d23b/images/product-images/network-helmets/network-helmets_mattePoppyTerraStorm_3Q.png?sw=700&sh=700&sm=fit",
+      "https://www.smithoptics.com/dw/image/v2/BDPZ_PRD/on/demandware.static/-/Sites-smith-master-catalog/default/dwad67212c/images/product-images/signal-helmet/signal-helmet_aurora_3Q.png?sw=700&sh=700&sm=fit",
+      "https://www.smithoptics.com/dw/image/v2/BDPZ_PRD/on/demandware.static/-/Sites-smith-master-catalog/default/dw7cfffd37/images/product-images/trace-helmet/trace-helmet_matteStoneMoss_3Q.png?sw=700&sh=700&sm=fit"
+    ],
+    "revendeurs": [
+      {
+        "nom": "/amazon-logo.png",
+        "link": [
+          "https://www.amazon.fr/SMITH-Network-MIPS-Casque-Route/dp/B0B1RNQYLN/",
+          "https://www.amazon.fr/SMITH-Signal-Casque-Adulte-Unisexe/dp/B0B1GPJFLS",
+          "https://www.amazon.fr/SMITH-Trace-Casque-Mixte-Matte/dp/B07GL3QN9G"
+        ]
+      },
+      {
+        "nom": "/alltricks-logo.png",
+        "link": [
+          "https://www.alltricks.fr/F-10007-casques/P-2536490-casque_smith_network_mips_bleu",
+          "https://www.alltricks.fr/F-10007-casques/P-2548364-casque_smith_signal_bleu",
+          "https://www.alltricks.fr/F-10007-casques/P-2535749-casque_smith_trace_mips_bleu_khaki"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "casques-uvex",
+    "modeles": ["Uvex Urban Planet", "Uvex Rise CC", "Uvex Race 9"],
+    "photos": [
+      "https://www.uvex-sports.com/fileadmin/_processed_/5/e/csm_14460612_51f25d7ecf.jpg",
+      "https://www.uvex-sports.com/fileadmin/_processed_/5/2/csm_12456927_255cabd610.jpg",
+      "https://www.uvex-sports.com/fileadmin/_processed_/6/5/csm_8975195_8e25815884.jpg"
+    ],
+    "revendeurs": [
+      {
+        "nom": "/amazon-logo.png",
+        "link": [
+          "https://www.amazon.fr/uvex-Urban-Planet-Individuel-Ventilation/dp/B0B24LRN6B",
+          "https://www.amazon.fr/uvex-Casque-Bicyclette-Unisexe-Yellow-Black/dp/B0999KH8S4",
+          "https://www.amazon.fr/uvex-Race-Performance-Extrêmement-Aérodynamique/dp/B08FC3FXHD"
+        ]
+      },
+      {
+        "nom": "/alltricks-logo.png",
+        "link": [
+          "",
+          "",
+          "https://www.alltricks.fr/F-10007-casques/P-1981487-casque_uvex_race_9_blanc___rouge"
+        ]
+      }
+    ]
+  }
+]

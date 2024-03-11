@@ -1,0 +1,47 @@
+"use client";
+import { useState, useEffect } from "react";
+import CardHome from "./homeCard.jsx";
+import "./articlesGrid.scss";
+import { baseUrl } from "../../utils/baseUrl.jsx";
+import React from "react";
+
+function ArticlesGrid() {
+  const [articles, setArticles] = useState([]);
+
+  useEffect(() => {
+    fetch(`${baseUrl}/articles/latest`)
+      .then((res) => res.json())
+      .then((data) => setArticles(data));
+  }, []);
+
+  return (
+    <section className="articles-grid">
+      <h2>Les derniers articles</h2>
+      <div className="grid-container">
+        {articles.map((article) => (
+          <CardHome
+            key={article._id}
+            title={article.title}
+            picture={article.file}
+            href={
+              article.tag === "casques"
+                ? `/casques/${article.slug}`
+                : article.tag === "lunettes"
+                ? `/lunettes/${article.slug}`
+                : article.tag === "vetements"
+                ? `/vetements/${article.slug}`
+                : article.tag === "chaussures"
+                ? `/chaussures/${article.slug}`
+                : `/article/${article.slug}`
+            }
+          />
+        ))}
+      </div>
+      <div className="more-articles">
+        <a href="/articles">Voir tous les articles</a>
+      </div>
+    </section>
+  );
+}
+
+export default ArticlesGrid;

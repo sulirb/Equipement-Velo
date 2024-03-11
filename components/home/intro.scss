@@ -1,0 +1,71 @@
+@import "../../app/global.scss";
+
+.intro {
+  padding: 3em;
+  display: flex;
+  &__hexagon {
+    margin: 1em 0;
+    width: 100px;
+    height: 57.735px;
+    background: $back-color1;
+    position: relative;
+    font-size: 60px;
+    text-align: center;
+  }
+  &__hexagon:hover {
+    opacity: 0.8;
+  }
+  &__hexagon::before {
+    content: "";
+    position: absolute;
+    top: -28.5px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 28.8675px solid $back-color1;
+  }
+  &__hexagon::after {
+    content: "";
+    position: absolute;
+    bottom: -28.5px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 28.8675px solid $back-color1;
+  }
+  &__title {
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  &__safe,
+  &__comfort,
+  &__style {
+    width: 33%;
+    text-align: -webkit-center;
+  }
+  &__txt {
+    width: 66%;
+  }
+}
+
+@media screen and (max-width: 1028px) {
+  .intro {
+    padding: 2em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+    &__safe,
+    &__comfort,
+    &__style {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+  }
+}

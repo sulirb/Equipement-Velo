@@ -1,0 +1,100 @@
+@import "../app/global.scss";
+
+.header {
+  background-color: $back-color1;
+  padding: 0 10em;
+  .menu-toggle {
+    display: none;
+  }
+  &__logo {
+    height: 70px;
+    margin: 0;
+    z-index: 3;
+    img {
+      width: 250px;
+      height: auto;
+    }
+  }
+  &__nav {
+    left: 55%;
+    position: absolute;
+    margin-top: -2.8em;
+    padding-bottom: 2em;
+  }
+  &__list {
+    text-transform: uppercase;
+    font-size: 15px;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+  }
+}
+
+@media (max-width: 1330px) {
+  .header {
+    padding: 0 7em;
+    &__nav {
+      left: 40%;
+    }
+  }
+}
+
+@media (max-width: 1028px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__nav {
+      position: relative;
+      margin-top: 1em;
+      left: 0;
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    &__logo img {
+      width: 200px;
+      margin-top: 0.5rem;
+    }
+    .menu-toggle {
+      font-size: 30px;
+      color: white;
+      padding: 0.2em;
+      display: block;
+      text-align: start;
+      svg {
+        cursor: pointer;
+      }
+    }
+    .header__list {
+      flex-direction: column;
+      padding: 0;
+      position: absolute;
+      z-index: 2;
+      &.active {
+        background-color: $back-color1;
+        width: 100%;
+        padding-bottom: 1em;
+      }
+      &.inactive {
+        display: none;
+      }
+    }
+    .header__list li {
+      display: none;
+    }
+    .header__list.active li {
+      width: 25%;
+      display: flex;
+      align-items: flex-start;
+    }
+    .header__nav {
+      left: 0;
+      position: absolute;
+      width: 100%;
+    }
+  }
+}
