@@ -4,12 +4,10 @@ import "../../../components/editor.scss";
 import { useCookies } from "react-cookie";
 import axios from "axios";
 import { baseUrl } from "../../../utils/baseUrl";
-import { useRouter } from "next/navigation";
 
 const SubmitImage = () => {
   const [cookies] = useCookies(["token"]);
   const token = cookies.token;
-  const router = useRouter();
   const [title, setTitle] = useState("");
   const [file, setFile] = useState(null);
   const [imageURL, setImageURL] = useState(null);
@@ -71,37 +69,31 @@ const SubmitImage = () => {
 
   return (
     <div>
-      {token ? (
-        <div className="form-container">
-          <form encType="multipart/form-data" onSubmit={handleSubmit}>
-            <div className="form-flex">
-              <label>
-                <h3>Titre:</h3>
-                <input
-                  type="text"
-                  name="title"
-                  value={title}
-                  onChange={handleTitleChange}
-                />
-              </label>
-              <label>
-                <h3>Image:</h3>
-                <input type="file" name="image" onChange={handleFileChange} />
-              </label>
-            </div>
-            <button type="submit">Valider</button>
-          </form>
-          {error && <p className="error">{error}</p>}
-          {confirmationMessage && (
-            <p className="success">{confirmationMessage}</p>
-          )}
-          {imageURL && <p className="image-url">Image URL: {imageURL}</p>}
-        </div>
-      ) : (
-        setTimeout(() => {
-          router("/404");
-        })
-      )}
+      <div className="form-container">
+        <form encType="multipart/form-data" onSubmit={handleSubmit}>
+          <div className="form-flex">
+            <label>
+              <h3>Titre:</h3>
+              <input
+                type="text"
+                name="title"
+                value={title}
+                onChange={handleTitleChange}
+              />
+            </label>
+            <label>
+              <h3>Image:</h3>
+              <input type="file" name="image" onChange={handleFileChange} />
+            </label>
+          </div>
+          <button type="submit">Valider</button>
+        </form>
+        {error && <p className="error">{error}</p>}
+        {confirmationMessage && (
+          <p className="success">{confirmationMessage}</p>
+        )}
+        {imageURL && <p className="image-url">Image URL: {imageURL}</p>}
+      </div>
     </div>
   );
 };

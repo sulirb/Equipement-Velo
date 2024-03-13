@@ -1,7 +1,7 @@
 "use client";
 import { Montserrat } from "next/font/google";
 import Footer from "../components/footer";
-import Header from "../components/Header";
+import Header from "../components/header";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
 const montserrat = Montserrat({
