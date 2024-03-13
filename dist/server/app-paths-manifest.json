@@ -1,0 +1,17 @@
+{
+  "/_not-found": "app/_not-found.js",
+  "/admin/page": "app/admin/page.js",
+  "/admin/su/page": "app/admin/su/page.js",
+  "/casques/[slug]/page": "app/casques/[slug]/page.js",
+  "/admin/wr/page": "app/admin/wr/page.js",
+  "/lunettes/[slug]/page": "app/lunettes/[slug]/page.js",
+  "/chaussures/[slug]/page": "app/chaussures/[slug]/page.js",
+  "/error/page": "app/error/page.js",
+  "/vetements/[slug]/page": "app/vetements/[slug]/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js",
+  "/mentions-legales/page": "app/mentions-legales/page.js",
+  "/article/[slug]/page": "app/article/[slug]/page.js",
+  "/articles/page": "app/articles/page.js",
+  "/contact/page": "app/contact/page.js"
+}
