@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
 import { useParams, useRouter } from "next/navigation";
-import Error from "../../error/page";
 import GlassTable from "./glassTable";
 import "../../article/[slug]/article.scss";
 import { useCookies } from "react-cookie";
@@ -52,10 +51,6 @@ function LunetteArticle() {
         router.push("/");
       });
   };
-
-  /*if (!article) {
-    router.push("/error");
-  }*/
 
   return (
     <section className="backarticle">

@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect } from "react";
-import Error from "../../error/page";
 import "./article.scss";
 import { useCookies } from "react-cookie";
 import { baseUrl } from "../../../utils/baseUrl";
@@ -50,10 +49,6 @@ function Article() {
         router.push("/");
       });
   };
-  console.log(article);
-  /*if (!article) {
-    router.push("/error");
-  }*/
 
   return (
     <section className="backarticle">
