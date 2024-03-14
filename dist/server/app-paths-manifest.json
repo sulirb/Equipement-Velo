@@ -1,17 +1,17 @@
 {
   "/_not-found": "app/_not-found.js",
-  "/admin/wr/page": "app/admin/wr/page.js",
-  "/admin/su/page": "app/admin/su/page.js",
   "/admin/page": "app/admin/page.js",
-  "/error/page": "app/error/page.js",
-  "/chaussures/[slug]/page": "app/chaussures/[slug]/page.js",
-  "/lunettes/[slug]/page": "app/lunettes/[slug]/page.js",
+  "/admin/su/page": "app/admin/su/page.js",
+  "/admin/wr/page": "app/admin/wr/page.js",
   "/casques/[slug]/page": "app/casques/[slug]/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/chaussures/[slug]/page": "app/chaussures/[slug]/page.js",
+  "/error/page": "app/error/page.js",
+  "/lunettes/[slug]/page": "app/lunettes/[slug]/page.js",
   "/vetements/[slug]/page": "app/vetements/[slug]/page.js",
-  "/page": "app/page.js",
-  "/mentions-legales/page": "app/mentions-legales/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/article/[slug]/page": "app/article/[slug]/page.js",
   "/articles/page": "app/articles/page.js",
-  "/contact/page": "app/contact/page.js"
+  "/contact/page": "app/contact/page.js",
+  "/page": "app/page.js",
+  "/mentions-legales/page": "app/mentions-legales/page.js"
 }
