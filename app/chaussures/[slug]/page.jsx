@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
 import { useParams, useRouter } from "next/navigation";
-import Error from "../../error/page";
 import ShoeTable from "./shoeTable";
 import "../../article/[slug]/article.scss";
 import { useCookies } from "react-cookie";

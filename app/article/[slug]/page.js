@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect } from "react";
-import Error from "../../error/page";
 import "./article.scss";
 import { useCookies } from "react-cookie";
 import { baseUrl } from "../../../utils/baseUrl";

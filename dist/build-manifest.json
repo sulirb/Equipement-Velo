@@ -5,8 +5,13 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
+<<<<<<< HEAD
     "static/pI1_pyBn9PK87cMKkwlt9/_buildManifest.js",
     "static/pI1_pyBn9PK87cMKkwlt9/_ssgManifest.js"
+=======
+    "static/Z73OrbWrrsd8UD81XHqp1/_buildManifest.js",
+    "static/Z73OrbWrrsd8UD81XHqp1/_ssgManifest.js"
+>>>>>>> 9c3e44ae5c79f67159faba3d3b39b29f17f546e9
   ],
   "rootMainFiles": [
     "static/chunks/webpack-0027b820faf551ad.js",

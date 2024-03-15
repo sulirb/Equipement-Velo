@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect } from "react";
-import Error from "../../error/page";
 import HelmetTable from "./helmetTable";
 import "../../article/[slug]/article.scss";
 import { useCookies } from "react-cookie";
