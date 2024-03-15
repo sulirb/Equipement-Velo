@@ -50,10 +50,6 @@ function Article() {
         router.push("/");
       });
   };
-  console.log(article);
-  /*if (!article) {
-    router.push("/error");
-  }*/
 
   return (
     <section className="backarticle">

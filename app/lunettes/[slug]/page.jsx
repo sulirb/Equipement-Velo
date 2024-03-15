@@ -53,10 +53,6 @@ function LunetteArticle() {
       });
   };
 
-  /*if (!article) {
-    router.push("/error");
-  }*/
-
   return (
     <section className="backarticle">
       {article && (
