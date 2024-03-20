@@ -4,8 +4,7 @@ import "./article.scss";
 import { useCookies } from "react-cookie";
 import { baseUrl } from "../../../utils/baseUrl";
 import Image from "next/image";
-import { useParams } from "next/navigation";
-import { useRouter } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 
 function Article() {
   const [article, setArticle] = useState(null);
@@ -32,9 +31,10 @@ function Article() {
       .catch((error) => {
         if (error.message === "404 Not Found") {
           console.error("Article introuvable : ", error);
+          router.push("/error");
         }
       });
-  }, [slug]);
+  }, [slug, router]);
 
   const deleteArticle = () => {
     fetch(`${baseUrl}/article/${slug}`, {

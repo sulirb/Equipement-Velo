@@ -53,7 +53,7 @@ function Connexion() {
         });
         setIsSubmitted(true);
         setTimeout(() => {
-          router("/admin/wr");
+          router.push("/admin/wr");
         }, 2000);
       }
     } catch (error) {

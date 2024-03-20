@@ -32,9 +32,10 @@ function LunetteArticle() {
       .catch((error) => {
         if (error.message === "404 Not Found") {
           console.error("Article introuvable : ", error);
+          router.push("/error");
         }
       });
-  }, [slug]);
+  }, [slug, router]);
 
   const deleteArticle = () => {
     fetch(`${baseUrl}/article/${slug}`, {
