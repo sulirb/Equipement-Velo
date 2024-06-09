@@ -1,4 +1,4 @@
-// File: C:\Users\sirba\OneDrive\Documents\equip-velo-for-nextjs\app\casques\[slug]\page.js
+// File: D:\equip-velo-for-nextjs\app\casques\[slug]\page.js
 import * as entry from '../../../../../app/casques/[slug]/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
