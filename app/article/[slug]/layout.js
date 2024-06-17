@@ -11,10 +11,12 @@ export async function generateMetadata({ params }) {
 
   return {
     title: `${article.title} - Équipement Vélo`,
-    description: article.content.replace(/<[^>]*>/g, "").substring(0, 150),
+    description:
+      article.content.replace(/<[^>]*>/g, "").substring(0, 150) + "...",
     openGraph: {
       title: `${article.title} - Équipement Vélo`,
-      description: article.content.replace(/<[^>]*>/g, "").substring(0, 150),
+      description:
+        article.content.replace(/<[^>]*>/g, "").substring(0, 150) + "...",
       images: [
         {
           url: article.file,

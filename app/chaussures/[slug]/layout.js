@@ -1,4 +1,4 @@
-import Page from "./page";
+import Page from "../page";
 import { baseUrl } from "../../../utils/baseUrl";
 
 export async function generateMetadata({ params }) {
@@ -11,7 +11,21 @@ export async function generateMetadata({ params }) {
 
   return {
     title: `${article.title} - Équipement Vélo`,
-    description: article.content.replace(/<[^>]*>/g, "").substring(0, 150),
+    description:
+      article.content.replace(/<[^>]*>/g, "").substring(0, 150) + "...",
+    openGraph: {
+      title: `${article.title} - Équipement Vélo`,
+      description:
+        article.content.replace(/<[^>]*>/g, "").substring(0, 150) + "...",
+      images: [
+        {
+          url: article.file,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+    },
   };
 }
 
