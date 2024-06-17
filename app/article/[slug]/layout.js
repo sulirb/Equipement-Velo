@@ -15,7 +15,14 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: `${article.title} - Équipement Vélo`,
       description: article.content.replace(/<[^>]*>/g, "").substring(0, 150),
-      image: article.file,
+      images: [
+        {
+          url: article.file,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
     },
   };
 }
