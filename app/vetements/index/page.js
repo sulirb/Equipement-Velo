@@ -1,8 +1,9 @@
 "use client";
 import { useState, useEffect } from "react";
-import Card from "../../components/listCard";
-import "../articles/articles.scss";
-import { baseUrl } from "../../utils/baseUrl";
+import Card from "../../../components/listCard";
+import "../../articles/articles.scss";
+import "../../article/[slug]/article.scss";
+import { baseUrl } from "../../../utils/baseUrl";
 
 function ClothesArticles() {
   const [articles, setArticles] = useState([]);

@@ -15,12 +15,12 @@ function Footer() {
         </p>
         <div className="footer__flex-a-icon">
           <a
-            href="https://www.instagram.com/equipementvelo5/"
-            aria-label="Instagram"
+            href="https://www.threads.net/@equipementvelo5"
+            aria-label="Threads"
             target="_blank"
             rel="noreferrer"
           >
-            <Icon icon="mdi:instagram" />
+            <Icon icon="akar-icons:threads-fill" />
           </a>
           <a
             href="https://twitter.com/EquipementVelo"

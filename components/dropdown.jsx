@@ -31,30 +31,37 @@ function Dropdown({ title, options }) {
   }, []);
 
   return (
-    <div
-      className={`dropdown ${isGreaterThan768px ? "desktop" : "mobile"}`}
-      onMouseEnter={isGreaterThan768px ? toggleDropdown : null}
-      onMouseLeave={isGreaterThan768px ? handleDropdownClose : null}
-      onClick={!isGreaterThan768px ? toggleDropdown : null}
-    >
-      <li className="dropdown__title">{title}</li>
-      {isOpen && (
-        <div className="dropdown__title-options">
-          {options.map((option) => (
-            <a
-              href={`/${title.toLowerCase().replace(/ê/g, "e")}/${option
-                .replace(/\s+/g, "-")
-                .replace(/[êé]/g, "e")
-                .replace(/\./g, "-")
-                .toLowerCase()}`}
-              key={option}
-            >
-              {option}
-            </a>
-          ))}
+    <li className="dropdown-container">
+      <div
+        className={`dropdown ${isGreaterThan768px ? "desktop" : "mobile"}`}
+        onMouseEnter={isGreaterThan768px ? toggleDropdown : null}
+        onMouseLeave={isGreaterThan768px ? handleDropdownClose : null}
+        onClick={!isGreaterThan768px ? toggleDropdown : null}
+      >
+        <div className="dropdown__title">
+          <a href={`/${title.toLowerCase().replace(/ê/g, "e")}/index`}>
+            {title}
+          </a>
         </div>
-      )}
-    </div>
+        {isOpen && (
+          <div className="dropdown__title-options">
+            {options.map((option) => (
+              <a
+                className="dropdown__anchor"
+                href={`/${title.toLowerCase().replace(/ê/g, "e")}/${option
+                  .replace(/\s+/g, "-")
+                  .replace(/[êé]/g, "e")
+                  .replace(/\./g, "-")
+                  .toLowerCase()}`}
+                key={option}
+              >
+                {option}
+              </a>
+            ))}
+          </div>
+        )}
+      </div>
+    </li>
   );
 }
 

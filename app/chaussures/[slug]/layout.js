@@ -1,4 +1,4 @@
-import Page from "../page";
+import Page from "./page";
 import { baseUrl } from "../../../utils/baseUrl";
 
 export async function generateMetadata({ params }) {

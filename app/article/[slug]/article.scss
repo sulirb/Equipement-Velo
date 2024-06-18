@@ -6,7 +6,6 @@
   margin: 0 12em;
   border-radius: 10px;
   background-color: white;
-
   &__title {
     font-size: 50px;
   }
@@ -43,11 +42,32 @@
     margin-bottom: 2.5em;
     &:hover {
       text-decoration: underline;
+      background-color: #01d28e;
     }
   }
-  &__text img {
-    max-height: 400px;
+  &__text ins {
+    margin-bottom: 2em;
+    display: inline-block;
   }
+  &__text img {
+    margin: 2em 0;
+    max-width: 50vw;
+  }
+  &__text ul {
+    margin-bottom: 1.5em;
+  }
+  &__text li {
+    font-size: 18px;
+    text-align: start;
+    @extend .textline;
+  }
+}
+.sub p {
+  margin-bottom: 15vh;
+}
+.backarticle {
+  padding: 1em 0;
+  background-color: $back-article-color;
 }
 
 @media (max-width: 1200px) {
@@ -79,16 +99,12 @@
     &__text h4 {
       font-size: 18px;
     }
-    &__text p {
+    &__text p,
+    &__text li {
       font-size: 16px;
     }
     &__text img {
-      width: -webkit-fill-available;
+      max-width: 80vw;
     }
   }
-}
-
-.backarticle {
-  padding: 1em 0;
-  background-color: $back-article-color;
 }

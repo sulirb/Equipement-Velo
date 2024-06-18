@@ -1,7 +1,7 @@
 @import "../../app/global.scss";
 
 .card {
-  height: 300px;
+  min-height: 310px;
   max-width: 400px;
   border-radius: 20px;
   background-color: $fond-color;
@@ -9,7 +9,7 @@
   text-decoration: none;
 
   .card__container {
-    border-radius: 5px;
+    border-radius: 25px;
     display: inline-block;
     background-color: $fond-color;
   }
@@ -22,8 +22,9 @@
   }
 
   .card__container__title {
+    margin: 4px;
     display: inline-block;
-    padding: 0 10px;
+    padding: 5px 13px;
   }
 
   .card__container__title__span {
@@ -44,24 +45,19 @@
     max-width: 300px;
     img {
       width: 300px;
+      max-height: 200px;
+
+      object-fit: cover;
     }
   }
 }
 
 @media screen and (max-width: 768px) {
   .card {
-    max-width: 400px;
-    img {
-      width: 400px;
-    }
-  }
-}
-
-@media screen and (max-width: 520px) {
-  .card {
+    width: 100%;
+    max-width: fit-content;
     img {
       width: 100%;
-      max-width: 420px;
     }
   }
 }
