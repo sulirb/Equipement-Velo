@@ -17,14 +17,12 @@ function CasqueArticle() {
   useEffect(() => {
     fetch(`${baseUrl}/article/${slug}`)
       .then((res) => {
-        console.log(res);
         if (!res.ok) {
           throw new Error("404 Not Found");
         }
         return res.json();
       })
       .then((data) => {
-        console.log(data);
         if (data.tag === "casques") {
           setArticle(data);
         } else {

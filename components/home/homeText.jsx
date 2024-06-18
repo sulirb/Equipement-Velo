@@ -19,7 +19,13 @@ function HomeText() {
           <strong>conseils</strong> et nos <strong>avis</strong> professionnels.
         </p>
 
-        <Image src={loveimg} alt="I love bike" />
+        <Image
+          src={loveimg}
+          alt="I love bike"
+          width={100}
+          height={100}
+          unoptimized
+        />
         <h3>Casque de vélo : Votre Bouclier de Protection</h3>
 
         <p>
@@ -182,7 +188,13 @@ function HomeText() {
           aperçu de celles qui se démarquent dans différentes catégories
           d&apos;équipement.
         </p>
-        <Image src={logolist} alt="Toutes les marques" />
+        <Image
+          src={logolist}
+          alt="Toutes les marques"
+          width={100}
+          height={100}
+          unoptimized
+        />
         <h3>Abus</h3>
         <p>
           Fondée en Allemagne,{" "}

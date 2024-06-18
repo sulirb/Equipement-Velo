@@ -16,3 +16,19 @@ $back-article-color: #e9eaed;
   line-height: 1.5em;
   margin-bottom: 1em;
 }
+
+button {
+  margin-top: 1em;
+  margin: 1em auto 0;
+  border-radius: 10px;
+  padding: 0.8em 1.5em;
+  font-size: 16px;
+  background-color: $back-color1;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  &:hover {
+    opacity: 0.8;
+  }
+}
