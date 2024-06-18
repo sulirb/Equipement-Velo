@@ -1,6 +1,5 @@
 "use client";
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
 import "../../../components/editor.scss";
 import { useCookies } from "react-cookie";
 import { baseUrl } from "../../../utils/baseUrl";
@@ -17,6 +16,12 @@ const SubmitImage = () => {
   const [selectedFolder, setSelectedFolder] = useState("images");
   const router = useRouter();
 
+  useEffect(() => {
+    if (!token) {
+      router.push("/error");
+    }
+  }, [token, router]);
+
   const handleTitleChange = (e) => {
     setTitle(e.target.value);
   };
@@ -27,7 +32,6 @@ const SubmitImage = () => {
 
   const handleFolderChange = (e) => {
     setSelectedFolder(e.target.value);
-    console.log(e.target.value);
   };
 
   const handleSubmit = (e) => {
@@ -74,47 +78,41 @@ const SubmitImage = () => {
       });
   };
 
+  if (!token) {
+    return null;
+  }
+
   return (
-    <div>
-      {token ? (
-        <div className="form-container">
-          <form encType="multipart/form-data" onSubmit={handleSubmit}>
-            <div className="form-flex">
-              <label>
-                <h3>Titre:</h3>
-                <input
-                  type="text"
-                  name="title"
-                  value={title}
-                  onChange={handleTitleChange}
-                />
-              </label>
-              <label>
-                <h3>Image:</h3>
-                <input type="file" name="image" onChange={handleFileChange} />
-              </label>
-              <label>
-                <h3>Choisissez le dossier :</h3>
-                <select value={selectedFolder} onChange={handleFolderChange}>
-                  <option selected>Choisissez</option>
-                  <option value="titre-images">Titre-Images</option>
-                  <option value="content">Content</option>
-                </select>
-              </label>
-            </div>
-            <button type="submit">Valider</button>
-          </form>
-          {error && <p className="error">{error}</p>}
-          {confirmationMessage && (
-            <p className="success">{confirmationMessage}</p>
-          )}
-          {imageURL && <p className="image-url">Image URL: {imageURL}</p>}
+    <div className="form-container">
+      <form encType="multipart/form-data" onSubmit={handleSubmit}>
+        <div className="form-flex">
+          <label>
+            <h3>Titre:</h3>
+            <input
+              type="text"
+              name="title"
+              value={title}
+              onChange={handleTitleChange}
+            />
+          </label>
+          <label>
+            <h3>Image:</h3>
+            <input type="file" name="image" onChange={handleFileChange} />
+          </label>
+          <label>
+            <h3>Choisissez le dossier :</h3>
+            <select value={selectedFolder} onChange={handleFolderChange}>
+              <option selected>Choisissez</option>
+              <option value="titre-images">Titre-Images</option>
+              <option value="content">Content</option>
+            </select>
+          </label>
         </div>
-      ) : (
-        setTimeout(() => {
-          router.push("/error");
-        })
-      )}
+        <button type="submit">Valider</button>
+      </form>
+      {error && <p className="error">{error}</p>}
+      {confirmationMessage && <p className="success">{confirmationMessage}</p>}
+      {imageURL && <p className="image-url">Image URL: {imageURL}</p>}
     </div>
   );
 };
