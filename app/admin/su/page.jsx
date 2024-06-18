@@ -1,9 +1,10 @@
 "use client";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../../../components/editor.scss";
 import { useCookies } from "react-cookie";
-import axios from "axios";
 import { baseUrl } from "../../../utils/baseUrl";
+import { useRouter } from "next/navigation";
 
 const SubmitImage = () => {
   const [cookies] = useCookies(["token"]);
@@ -13,6 +14,8 @@ const SubmitImage = () => {
   const [imageURL, setImageURL] = useState(null);
   const [confirmationMessage, setConfirmationMessage] = useState("");
   const [error, setError] = useState("");
+  const [selectedFolder, setSelectedFolder] = useState("images");
+  const router = useRouter();
 
   const handleTitleChange = (e) => {
     setTitle(e.target.value);
@@ -20,6 +23,11 @@ const SubmitImage = () => {
 
   const handleFileChange = (e) => {
     setFile(e.target.files[0]); // Stockez le fichier sélectionné
+  };
+
+  const handleFolderChange = (e) => {
+    setSelectedFolder(e.target.value);
+    console.log(e.target.value);
   };
 
   const handleSubmit = (e) => {
@@ -33,6 +41,7 @@ const SubmitImage = () => {
     const formData = new FormData();
     formData.append("title", title);
     formData.append("image", file);
+    formData.append("folder", selectedFolder);
 
     fetch(`${baseUrl}/images`, {
       headers: {
@@ -50,11 +59,9 @@ const SubmitImage = () => {
         }
         return response.json();
       })
-      .then(() => {
-        axios.get(`${baseUrl}/images`).then((resp) => {
-          const datafile = resp.data[0].file;
-          setImageURL(datafile);
-        });
+      .then((data) => {
+        const imageURL = data.link; // Récupérez l'URL de l'image depuis la réponse de la requête POST
+        setImageURL(imageURL);
         setConfirmationMessage("L'image a été enregistré avec succès !");
         setError(""); // Réinitialisez les erreurs
       })
@@ -69,31 +76,45 @@ const SubmitImage = () => {
 
   return (
     <div>
-      <div className="form-container">
-        <form encType="multipart/form-data" onSubmit={handleSubmit}>
-          <div className="form-flex">
-            <label>
-              <h3>Titre:</h3>
-              <input
-                type="text"
-                name="title"
-                value={title}
-                onChange={handleTitleChange}
-              />
-            </label>
-            <label>
-              <h3>Image:</h3>
-              <input type="file" name="image" onChange={handleFileChange} />
-            </label>
-          </div>
-          <button type="submit">Valider</button>
-        </form>
-        {error && <p className="error">{error}</p>}
-        {confirmationMessage && (
-          <p className="success">{confirmationMessage}</p>
-        )}
-        {imageURL && <p className="image-url">Image URL: {imageURL}</p>}
-      </div>
+      {token ? (
+        <div className="form-container">
+          <form encType="multipart/form-data" onSubmit={handleSubmit}>
+            <div className="form-flex">
+              <label>
+                <h3>Titre:</h3>
+                <input
+                  type="text"
+                  name="title"
+                  value={title}
+                  onChange={handleTitleChange}
+                />
+              </label>
+              <label>
+                <h3>Image:</h3>
+                <input type="file" name="image" onChange={handleFileChange} />
+              </label>
+              <label>
+                <h3>Choisissez le dossier :</h3>
+                <select value={selectedFolder} onChange={handleFolderChange}>
+                  <option selected>Choisissez</option>
+                  <option value="titre-images">Titre-Images</option>
+                  <option value="content">Content</option>
+                </select>
+              </label>
+            </div>
+            <button type="submit">Valider</button>
+          </form>
+          {error && <p className="error">{error}</p>}
+          {confirmationMessage && (
+            <p className="success">{confirmationMessage}</p>
+          )}
+          {imageURL && <p className="image-url">Image URL: {imageURL}</p>}
+        </div>
+      ) : (
+        setTimeout(() => {
+          router.push("/error");
+        })
+      )}
     </div>
   );
 };

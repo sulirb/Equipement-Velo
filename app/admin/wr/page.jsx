@@ -9,7 +9,7 @@ function Article() {
   const router = useRouter();
 
   return (
-    /*   <div>
+    <div>
       {token ? (
         <MyEditor />
       ) : (
@@ -17,9 +17,6 @@ function Article() {
           router.push("/error");
         })
       )}
-    </div>*/
-    <div>
-      <MyEditor />
     </div>
   );
 }
