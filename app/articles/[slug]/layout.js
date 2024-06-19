@@ -1,7 +1,7 @@
 import Page from "./page";
 
 export const metadata = {
-  title: "Articles",
+  title: "Liste des Articles - Équipement Vélo",
 };
 
 export default Page;

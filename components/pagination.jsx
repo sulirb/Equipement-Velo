@@ -1,17 +1,17 @@
 "use client";
-import { Link } from "next/link";
+import { useRouter } from "next/navigation";
 import { Icon } from "@iconify/react";
 import PropTypes from "prop-types";
 import "./pagination.scss";
 import { useEffect, useState } from "react";
 import { baseUrl } from "../utils/baseUrl";
-import { redirect } from "next/dist/server/api-utils";
 
 function Pagination({ currentPage }) {
   const [articles, setArticles] = useState([]);
+  const router = useRouter();
 
   const goToPage = (page) => {
-    redirect(`/articles/${page}`);
+    router.push(`/articles/${page}`);
   };
 
   useEffect(() => {
@@ -21,18 +21,20 @@ function Pagination({ currentPage }) {
   }, []);
 
   const pages = Math.ceil(articles.length / 20);
-  console.log(pages);
-  console.log(articles.length);
-  console.log(articles);
+
   return (
     <div className="pagination">
       {currentPage > 1 && (
-        <Link
-          to={`/articles/${currentPage - 1}`}
+        <a
+          href="#"
+          onClick={(e) => {
+            e.preventDefault();
+            goToPage(currentPage - 1);
+          }}
           className="pagination__chevron"
         >
           <Icon icon="ic:round-chevron-left" />
-        </Link>
+        </a>
       )}
 
       <div className="pagination__number">
@@ -40,10 +42,13 @@ function Pagination({ currentPage }) {
           const page = index + 1;
           return (
             <a
-              href=""
+              href="#"
               key={page}
               className={page === currentPage ? "active" : ""}
-              onClick={() => goToPage(page)}
+              onClick={(e) => {
+                e.preventDefault();
+                goToPage(page);
+              }}
             >
               {page}
             </a>
@@ -52,12 +57,16 @@ function Pagination({ currentPage }) {
       </div>
 
       {currentPage < pages && (
-        <Link
-          to={`/articles/${currentPage + 1}`}
+        <a
+          href="#"
+          onClick={(e) => {
+            e.preventDefault();
+            goToPage(currentPage + 1);
+          }}
           className="pagination__chevron"
         >
           <Icon icon="ic:round-chevron-right" />
-        </Link>
+        </a>
       )}
     </div>
   );

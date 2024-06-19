@@ -1,15 +1,17 @@
 @import "../../app/global.scss";
 
+.backmentions {
+  padding: 1em 0;
+  background-color: #e9eaed;
+}
 .mentions {
-  padding: 0 4em;
-  margin: 3em 0;
-
+  background-color: $back-article-color;
   &-text {
-    background-color: $fond-color;
-    padding: 2em 2.5em;
+    background-color: white;
+    padding: 3em;
+    margin: 0 12em;
     border-radius: 10px;
-    box-shadow: 3px 0px 5px 4px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
+    margin-bottom: 2em;
     &-title {
       margin-top: 1em;
       text-align: center;
@@ -17,6 +19,38 @@
     p,
     ul {
       @extend .textline;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .mentions-text {
+    margin: 0;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .mentions-text {
+    padding: 2em 1em;
+    &__title {
+      margin: 0 0 1em 0;
+      font-size: 30px;
+    }
+    &__text {
+      margin: 0;
+    }
+    &__text h3 {
+      font-size: 20px;
+    }
+    &__text h4 {
+      font-size: 18px;
+    }
+    &__text p {
+      font-size: 16px;
+    }
+    &__text img {
+      width: -webkit-fill-available;
     }
   }
 }

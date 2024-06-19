@@ -38,7 +38,7 @@ function ArticlesGrid() {
         ))}
       </div>
       <div className="more-articles">
-        <a href="/articles">Voir tous les articles</a>
+        <a href="/articles/1">Voir tous les articles</a>
       </div>
     </section>
   );
