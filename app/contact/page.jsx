@@ -45,7 +45,7 @@ function ContactForm() {
         "TpB4yyeyfhNNBoEtv"
       );
       toggleAlert(
-        "Votre e-mail a bien été envoyé, une réponse vous sera renvoyé dans les plus proches délais.",
+        "Votre email a bien été reçu. Nous vous répondrons dans les plus brefs délais.",
         "success"
       );
     } catch (e) {
