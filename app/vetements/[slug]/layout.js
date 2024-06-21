@@ -25,7 +25,17 @@ export async function generateMetadata({ params }) {
     },
     twitter: {
       title: article.title,
+      description:
+        article.content.replace(/<[^>]*>/g, "").substring(0, 150) + "...",
+      images: [
+        {
+          url: article.file,
+        },
+      ],
       card: "summary_large_image",
+    },
+    alternates: {
+      canonical: `https://equipement-velo.fr/vetements/${article.slug}`,
     },
   };
 }
