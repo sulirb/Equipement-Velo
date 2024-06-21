@@ -11,7 +11,22 @@ export async function generateMetadata({ params }) {
 
   return {
     title: `${article.title} - Équipement Vélo`,
-    description: article.content.replace(/<[^>]*>/g, "").substring(0, 150),
+    description:
+      article.content.replace(/<[^>]*>/g, "").substring(0, 150) + "...",
+    openGraph: {
+      title: article.title,
+      description:
+        article.content.replace(/<[^>]*>/g, "").substring(0, 150) + "...",
+      images: [
+        {
+          url: article.file,
+        },
+      ],
+    },
+    twitter: {
+      title: article.title,
+      card: "summary_large_image",
+    },
   };
 }
 

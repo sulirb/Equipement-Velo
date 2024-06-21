@@ -14,7 +14,7 @@ export async function generateMetadata({ params }) {
     description:
       article.content.replace(/<[^>]*>/g, "").substring(0, 150) + "...",
     openGraph: {
-      title: `${article.title} - Équipement Vélo`,
+      title: article.title,
       description:
         article.content.replace(/<[^>]*>/g, "").substring(0, 150) + "...",
       images: [
@@ -24,6 +24,7 @@ export async function generateMetadata({ params }) {
       ],
     },
     twitter: {
+      title: article.title,
       card: "summary_large_image",
     },
   };
