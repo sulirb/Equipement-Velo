@@ -13,8 +13,11 @@ export const metadata = {
       "Découvrez nos meilleurs conseils pour choisir casques, lunettes, vêtements et chaussures de vélo adaptés à votre style et à vos besoins.",
     url: "https://equipement-velo.fr",
     siteName: "Équipement Vélo",
-    image:
-      "https://equipement-velo.s3.eu-west-3.amazonaws.com/logo/logo-fb-size.png",
+    images: [
+      {
+        url: "https://equipement-velo.s3.eu-west-3.amazonaws.com/logo/logo-fb-size.png",
+      },
+    ],
     locale: "fr_FR",
     type: "website",
   },
