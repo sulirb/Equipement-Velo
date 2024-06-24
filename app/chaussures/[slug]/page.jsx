@@ -53,8 +53,22 @@ function ChaussureArticle() {
       });
   };
 
+  const jsonLd = article
+    ? {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        name: "Équipement Vélo",
+        url: `https://equipement-velo.fr/chaussures/${article.slug}`,
+        inLanguage: "fr_FR",
+      }
+    : {};
+
   return (
     <section className="backarticle">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {article && (
         <div className="article">
           <h2 className="article__title">{article.title}</h2>
