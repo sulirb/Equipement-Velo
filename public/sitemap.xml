@@ -17,7 +17,7 @@
         <priority>0.3</priority>
     </url>
     <url>
-        <loc>https://www.equipement-velo.fr/articles</loc>
+        <loc>https://www.equipement-velo.fr/articles/1</loc>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
@@ -37,22 +37,22 @@
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://www.equipement-velo.fr/chaussures</loc>
+        <loc>https://www.equipement-velo.fr/chaussures/index</loc>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://www.equipement-velo.fr/casques</loc>
+        <loc>https://www.equipement-velo.fr/casques/index</loc>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://www.equipement-velo.fr/lunettes</loc>
+        <loc>https://www.equipement-velo.fr/lunettes/index</loc>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://www.equipement-velo.fr/vetements</loc>
+        <loc>https://www.equipement-velo.fr/vetements/index</loc>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
@@ -408,6 +408,11 @@
 </url>
 <url>
     <loc>https://www.equipement-velo.fr/article/coros-dura-le-gps-qui-veut-concurrencer-garmin</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://www.equipement-velo.fr/article/le-guide-cuissard-femme</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>

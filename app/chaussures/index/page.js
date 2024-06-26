@@ -16,8 +16,20 @@ function ShoesArticles() {
       });
   }, []);
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Équipement Vélo",
+    url: `https://equipement-velo.fr/chaussures/index`,
+    inLanguage: "fr_FR",
+  };
+
   return (
     <section className="articles-list">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <h2>Chaussures</h2>
       <div className="article__text sub">
         <p>

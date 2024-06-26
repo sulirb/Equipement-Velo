@@ -16,8 +16,20 @@ function GlassArticles() {
       });
   }, []);
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Équipement Vélo",
+    url: `https://equipement-velo.fr/lunettes/index`,
+    inLanguage: "fr_FR",
+  };
+
   return (
     <section className="articles-list">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <h2>Lunettes</h2>
       <div className="article__text sub">
         <p>

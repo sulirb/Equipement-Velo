@@ -16,8 +16,20 @@ function ClothesArticles() {
       });
   }, []);
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Équipement Vélo",
+    url: `https://equipement-velo.fr/vetements/index`,
+    inLanguage: "fr_FR",
+  };
+
   return (
     <section className="articles-list">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <h2>Vêtements</h2>
       <div className="article__text sub">
         <p>
@@ -36,6 +48,10 @@ function ClothesArticles() {
           et même{" "}
           <a href="https://www.equipement-velo.fr/article/les-chaussettes-pour-le-velo-un-indispensable">
             les chaussettes
+          </a>
+          , pour homme ou{" "}
+          <a href="https://www.equipement-velo.fr/article/le-guide-cuissard-femme">
+            pour femme
           </a>
           , il est toujours satisfaisant de partir en vélo dans des vêtements
           confortables qui correspondent à notre style. Ainsi, vous trouverez
