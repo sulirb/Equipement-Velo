@@ -1,1 +1,1 @@
-export const baseUrl = "https://e-velo-api.adaptable.app";
+export const baseUrl = "https://equipement-velo-api.vercel.app";
