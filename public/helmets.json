@@ -3,7 +3,7 @@
     "slug": "casques-abus",
     "modeles": ["Abus Powerdome Ace", "Abus Viantor", "Abus Gamechanger 2.0"],
     "photos": [
-      "https://www.abus.com/var/StorageStatic/assets/Mobile%20Sicherheit/Helme/Road/PowerDome/Kat2022/91941_POWERDOME_GOLDFISH_SIDE_CMYK_abus_640.png",
+      "https://equipement-velo.s3.eu-west-3.amazonaws.com/content/abus-powerdome-ace-1720429779325.jpg",
       "https://www.abus.com/var/StorageStatic/assets/Mobile%20Sicherheit/Helme/Road/Viantor/Kat2019/81676_Viantor_gleam_silver_side_abus_640.png",
       "https://www.abus.com/var/StorageStatic/assets/Mobile%20Sicherheit/Helme/Road/GameChanger%202.0/Kat2023/98006_GAMECHANGER-2.0_SHINY-WHITE_SIDE_abus_640.png"
     ],
@@ -169,7 +169,7 @@
     "slug": "casques-poc",
     "modeles": ["Poc Octal X Mips", "Poc Omne Air Mips", "Poc Ventral Mips"],
     "photos": [
-      "https://www.pocsports.com/cdn/shop/products/10668_OctalXMIPS_1002_UraniumBlack_0001_1200x.png?v=1644855008",
+      "https://equipement-velo.s3.eu-west-3.amazonaws.com/content/poc-octal-x-mips-1720430832201.jpg",
       "https://www.pocsports.com/cdn/shop/products/10770_OmneAirMIPS_1001_HydrogenWhite_0001_c3c905d4-4a2b-4bd7-968a-1195b57d08dd_1200x.png?v=1701167825",
       "https://www.pocsports.com/cdn/shop/products/10750_VentralMIPS_1822_CerussiteKashima_MetallicMatt_0001_1200x.png?v=1678355263"
     ],

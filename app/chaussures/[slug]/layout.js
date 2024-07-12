@@ -22,6 +22,7 @@ export async function generateMetadata({ params }) {
           url: article.file,
         },
       ],
+      siteName: "Équipement Vélo",
     },
     twitter: {
       title: article.title,

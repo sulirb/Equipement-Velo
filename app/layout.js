@@ -12,9 +12,25 @@ const montserrat = Montserrat({
   display: "swap",
 });
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Équipement Vélo",
+  alternateName: "equipement-velo.fr",
+  description: "Conseils Casques, Vêtements, Lunettes et Chaussures",
+  url: "https://equipement-velo.fr",
+  inLanguage: "fr_FR",
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className={montserrat.className}>
         <Header />
         {children}

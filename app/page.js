@@ -23,23 +23,9 @@ export const metadata = {
   },
 };
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  name: "Équipement Vélo",
-  alternateName: "equipement-velo.fr",
-  description: "Conseils Casques, Vêtements, Lunettes et Chaussures",
-  url: "https://equipement-velo.fr",
-  inLanguage: "fr_FR",
-};
-
 export default function Page() {
   return (
     <div>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
       <Home />
     </div>
   );
