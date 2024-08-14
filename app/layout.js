@@ -16,22 +16,22 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Équipement Vélo",
-  alternateName: "equipement-velo.fr",
   description: "Conseils Casques, Vêtements, Lunettes et Chaussures",
   url: "https://equipement-velo.fr",
+  logo: "https://www.equipement-velo.fr/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.9df58a92.png&w=640&q=75",
   inLanguage: "fr_FR",
+  email: "contact@equipement-velo.fr",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
-      <head>
+      <head></head>
+      <body className={montserrat.className}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-      </head>
-      <body className={montserrat.className}>
         <Header />
         {children}
         <Footer />
