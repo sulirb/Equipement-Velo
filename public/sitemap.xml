@@ -466,4 +466,14 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
+<url>
+    <loc>https://www.equipement-velo.fr/article/les-100-slendale-des-lunettes-performantes-a-bon-prix</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://www.equipement-velo.fr/article/3-outils-a-emporter-avec-soi-en-sortie</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
 </urlset>
