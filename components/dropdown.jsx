@@ -50,7 +50,7 @@ function Dropdown({ title, options }) {
         onClick={!isGreaterThan768px ? toggleDropdown : null}
       >
         <div className="dropdown__title">
-          <Link href={`/${title.toLowerCase().replace(/ê/g, "e")}`}>
+          <Link href={`/${title.toLowerCase().replace(/ê/g, "e")}/index`}>
             {title}
           </Link>
         </div>
