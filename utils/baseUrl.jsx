@@ -1,1 +1,1 @@
-export const baseUrl = "https://equipement-velo-api.vercel.app";
+export const baseUrl = "http://localhost:80";

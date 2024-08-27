@@ -15,10 +15,13 @@ const SubmitImage = () => {
   const [error, setError] = useState("");
   const [selectedFolder, setSelectedFolder] = useState("images");
   const router = useRouter();
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     if (!token) {
       router.push("/error");
+    } else {
+      setIsLoading(false);
     }
   }, [token, router]);
 
@@ -78,8 +81,8 @@ const SubmitImage = () => {
       });
   };
 
-  if (!token) {
-    return null;
+  if (isLoading) {
+    return null; // ou un composant de chargement
   }
 
   return (
@@ -102,7 +105,7 @@ const SubmitImage = () => {
           <label>
             <h3>Choisissez le dossier :</h3>
             <select value={selectedFolder} onChange={handleFolderChange}>
-              <option selected>Choisissez</option>
+              <option value="">Choisissez</option>
               <option value="titre-images">Titre-Images</option>
               <option value="content">Content</option>
             </select>

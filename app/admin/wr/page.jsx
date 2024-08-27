@@ -2,28 +2,31 @@
 import { useCookies } from "react-cookie";
 import MyEditor from "../../../components/editor";
 import { useRouter } from "next/navigation";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
-function Article() {
+function ArticleEditor() {
   const [cookies] = useCookies(["token"]);
   const token = cookies.token;
   const router = useRouter();
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     if (!token) {
       router.push("/error");
+    } else {
+      setIsLoading(false);
     }
   }, [token, router]);
 
-  if (!token) {
-    return null;
+  if (isLoading) {
+    return null; // ou un composant de chargement
   }
 
   return (
-    <div>
+    <section>
       <MyEditor />
-    </div>
+    </section>
   );
 }
 
-export default Article;
+export default ArticleEditor;

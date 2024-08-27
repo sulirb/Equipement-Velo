@@ -1,31 +1,30 @@
 "use client";
-import dynamic from "next/dynamic";
 import { useState } from "react";
-import { EditorState, convertToRaw } from "draft-js";
-import "draft-js/dist/Draft.css";
-import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 import "./editor.scss";
-import draftToHtml from "draftjs-to-html";
 import { useCookies } from "react-cookie";
 import { baseUrl } from "../utils/baseUrl";
-const Editor = dynamic(
-  () => import("react-draft-wysiwyg").then((mod) => mod.Editor),
-  { ssr: false }
-);
+import { useEditor, EditorContent } from "@tiptap/react";
+import TiptapOptions from "../utils/tiptapOptions";
+import MenuBar from "../utils/menuBar";
 
-const MyEditor = () => {
+const TiptapEditor = () => {
   const [cookies] = useCookies(["token"]);
   const token = cookies.token;
-  const [editorState, setEditorState] = useState(EditorState.createEmpty());
   const [title, setTitle] = useState("");
   const [tag, setTag] = useState("");
   const [file, setFile] = useState(null);
   const [confirmationMessage, setConfirmationMessage] = useState("");
   const [error, setError] = useState("");
 
-  const onEditorStateChange = (state) => {
-    setEditorState(state);
-  };
+  const { extensions, content } = TiptapOptions();
+
+  const editor = useEditor({
+    extensions,
+    content,
+    onUpdate: ({ editor }) => {
+      const html = editor.getHTML();
+    },
+  });
 
   const handleTitleChange = (e) => {
     setTitle(e.target.value);
@@ -42,22 +41,15 @@ const MyEditor = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (
-      !title ||
-      !file ||
-      editorState.getCurrentContent().getPlainText("\u0001") === ""
-    ) {
+    if (!title || !file || !editor || editor.isEmpty) {
       setError("Veuillez remplir tous les champs.");
       return;
     }
 
     const formData = new FormData();
     formData.append("title", title);
-    formData.append(
-      "content",
-      draftToHtml(convertToRaw(editorState.getCurrentContent()))
-    );
     formData.append("image", file);
+    formData.append("content", editor.getHTML());
     formData.append("tag", tag);
 
     fetch(`${baseUrl}/articles`, {
@@ -114,24 +106,8 @@ const MyEditor = () => {
           </div>
           <label>
             <h3>Contenu:</h3>
-            <Editor
-              editorState={editorState}
-              placeholder="L'article commence ici..."
-              wrapperClassName="wrapper-class"
-              editorClassName="editor-class"
-              toolbarClassName="toolbar-class"
-              toolbar={{
-                inline: { inDropdown: true },
-                list: { inDropdown: true },
-                textAlign: { inDropdown: true },
-                link: { inDropdown: true },
-                history: { inDropdown: true },
-              }}
-              localization={{
-                locale: "fr",
-              }}
-              onEditorStateChange={onEditorStateChange}
-            />
+            <MenuBar editor={editor} />
+            <EditorContent editor={editor} />
           </label>
           <label>
             <h3>Tag:</h3>
@@ -151,4 +127,4 @@ const MyEditor = () => {
   );
 };
 
-export default MyEditor;
+export default TiptapEditor;
