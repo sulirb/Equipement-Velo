@@ -45,7 +45,8 @@
       background-color: #01d28e;
     }
   }
-  &__text ins {
+  &__text ins,
+  &__text u {
     margin-bottom: 2em;
     display: inline-block;
   }
