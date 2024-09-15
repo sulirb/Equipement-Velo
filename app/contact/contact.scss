@@ -73,3 +73,9 @@ button {
     opacity: 0.8;
   }
 }
+
+@media (max-width: 762px) {
+  .contact-form {
+    margin: 0 2rem 2rem;
+  }
+}
