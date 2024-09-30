@@ -80,10 +80,9 @@ function Mentions() {
 
           <ul>
             <li>
-              Sous Internet Explorer : onglet outil (pictogramme en forme de
-              rouage en haut a droite) / options internet. Cliquez sur
-              Confidentialité et choisissez Bloquer tous les cookies. Validez
-              sur Ok.
+              Sous Microsoft Edge : onglet outil (pictogramme en forme de rouage
+              en haut a droite) / options internet. Cliquez sur Confidentialité
+              et choisissez Bloquer tous les cookies. Validez sur Ok.
             </li>
             <li>
               Sous Firefox : en haut de la fenêtre du navigateur, cliquez sur le

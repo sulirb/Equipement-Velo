@@ -56,6 +56,26 @@
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
+        <url>
+        <loc>https://www.equipement-velo.fr/chaussures</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://www.equipement-velo.fr/casques</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://www.equipement-velo.fr/lunettes</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://www.equipement-velo.fr/vetements</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
     <url>
         <loc>https://www.equipement-velo.fr/casques/casques-abus</loc>
         <changefreq>monthly</changefreq>
@@ -483,6 +503,16 @@
 </url>
 <url>
     <loc>https://www.equipement-velo.fr/article/les-chaussures-fizik-terra-taille-pour-le-gravel-et-le-vtt</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://www.equipement-velo.fr/article/le-cuissard-long-gorewear-c3-thermo-parfait-pour-l-automne</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://www.equipement-velo.fr/article/le-jespr-un-nouveau-compteur-velo-revolutionnaire</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
