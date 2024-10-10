@@ -43,6 +43,7 @@ function Pagination({ currentPage }) {
           return (
             <a
               href="#"
+              {...(page === currentPage ? { "aria-current": "page" } : {})}
               key={page}
               className={page === currentPage ? "active" : ""}
               onClick={(e) => {

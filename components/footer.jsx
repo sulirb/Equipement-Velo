@@ -20,7 +20,7 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            <Icon icon="akar-icons:threads-fill" />
+            <Icon icon="hugeicons:threads" />
           </a>
           <a
             href="https://twitter.com/EquipementVelo"
@@ -28,7 +28,7 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            <Icon icon="mdi:twitter" />
+            <Icon icon="hugeicons:new-twitter" />
           </a>
           <a
             href="https://www.facebook.com/profile.php?id=61555770154596"
@@ -36,7 +36,7 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            <Icon icon="mdi:facebook" />
+            <Icon icon="hugeicons:facebook-02" />
           </a>
         </div>
       </div>
