@@ -5,7 +5,7 @@ import "../articles.scss";
 import Pagination from "../../../components/pagination";
 import { baseUrl } from "../../../utils/baseUrl";
 import { useParams, useRouter } from "next/navigation";
-import { ClipLoader, ScaleLoader } from "react-spinners";
+import Loader from "../../../utils/loader";
 
 function Articles() {
   const [articles, setArticles] = useState([]);
@@ -35,7 +35,7 @@ function Articles() {
     <section className="articles-list">
       <h2>Liste des articles</h2>
       {isLoading ? (
-        <Loading />
+        <Loader />
       ) : (
         <div className="list-container">
           {articles.map((article) => (
@@ -65,18 +65,4 @@ function Articles() {
   );
 }
 
-function Loading() {
-  return (
-    <div className="load-container">
-      <ClipLoader
-        color="#3131ce"
-        loading={true}
-        size={150}
-        aria-label="Loading Spinner"
-        data-testid="loader"
-        speedMultiplier={0.9}
-      />
-    </div>
-  );
-}
 export default Articles;
