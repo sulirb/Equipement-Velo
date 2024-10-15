@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect, Suspense } from "react";
+import { useState, useEffect } from "react";
 import CardList from "../../../components/listCard";
 import "../articles.scss";
 import Pagination from "../../../components/pagination";

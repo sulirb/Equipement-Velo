@@ -6,6 +6,7 @@ import "../../article/[slug]/article.scss";
 import { useCookies } from "react-cookie";
 import { baseUrl } from "../../../utils/baseUrl";
 import Image from "next/image";
+import Loader from "../../../utils/loader";
 
 function VetementsArticle() {
   const [article, setArticle] = useState(null);
@@ -13,6 +14,7 @@ function VetementsArticle() {
   const router = useRouter();
   const [cookies] = useCookies(["token"]);
   const token = cookies.token;
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     fetch(`${baseUrl}/article/${slug}`)
@@ -25,6 +27,7 @@ function VetementsArticle() {
       .then((data) => {
         if (data.tag === "vetements") {
           setArticle(data);
+          setIsLoading(false);
         } else {
           throw new Error("404 Not Found");
         }
@@ -34,6 +37,7 @@ function VetementsArticle() {
           console.error("Article introuvable : ", error);
           router.push("/error");
         }
+        setIsLoading(false);
       });
   }, [slug, router]);
 
@@ -69,27 +73,35 @@ function VetementsArticle() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      {article && (
-        <div className="article">
-          <h2 className="article__title">{article.title}</h2>
-          <div className="article__date">Publié le : {article.createdAt}</div>
-          <Image
-            className="article__file"
-            src={article.file}
-            alt={`${article.content
-              .replace(/<[^>]*>/g, "")
-              .substring(0, 20)}...`}
-            width={100}
-            height={100}
-            unoptimized
-          />
-          <ClotheTable />
-          <div
-            className="article__text"
-            dangerouslySetInnerHTML={{ __html: article.content }}
-          />
-          {token ? <button onClick={deleteArticle}>DELETE</button> : ""}
-        </div>
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <>
+          {article && (
+            <div className="article">
+              <h2 className="article__title">{article.title}</h2>
+              <div className="article__date">
+                Publié le : {article.createdAt}
+              </div>
+              <Image
+                className="article__file"
+                src={article.file}
+                alt={`${article.content
+                  .replace(/<[^>]*>/g, "")
+                  .substring(0, 20)}...`}
+                width={100}
+                height={100}
+                unoptimized
+              />
+              <ClotheTable />
+              <div
+                className="article__text"
+                dangerouslySetInnerHTML={{ __html: article.content }}
+              />
+              {token ? <button onClick={deleteArticle}>DELETE</button> : ""}
+            </div>
+          )}{" "}
+        </>
       )}
     </section>
   );
