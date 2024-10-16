@@ -4,15 +4,18 @@ import Card from "../../../components/listCard";
 import "../../articles/articles.scss";
 import "../../article/[slug]/article.scss";
 import { baseUrl } from "../../../utils/baseUrl";
+import Loader from "../../../utils/loader";
 
 function ShoesArticles() {
   const [articles, setArticles] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     fetch(`${baseUrl}/articles/chaussures`)
       .then((res) => res.json())
       .then((data) => {
         setArticles(data);
+        setIsLoading(false);
       });
   }, []);
 
@@ -46,28 +49,32 @@ function ShoesArticles() {
           des chaussures de vélo, n&apos;hésitez pas à lire nos articles.
         </p>
       </div>
-      <div className="list-container">
-        {articles.map((article) => (
-          <Card
-            key={article._id}
-            title={article.title}
-            picture={article.file}
-            content={article.content}
-            date={article.createdAt}
-            href={
-              article.tag === "casques"
-                ? `/casques/${article.slug}`
-                : article.tag === "lunettes"
-                ? `/lunettes/${article.slug}`
-                : article.tag === "vetements"
-                ? `/vetements/${article.slug}`
-                : article.tag === "chaussures"
-                ? `/chaussures/${article.slug}`
-                : `/article/${article.slug}`
-            }
-          />
-        ))}
-      </div>
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <div className="list-container">
+          {articles.map((article) => (
+            <Card
+              key={article._id}
+              title={article.title}
+              picture={article.file}
+              content={article.content}
+              date={article.createdAt}
+              href={
+                article.tag === "casques"
+                  ? `/casques/${article.slug}`
+                  : article.tag === "lunettes"
+                  ? `/lunettes/${article.slug}`
+                  : article.tag === "vetements"
+                  ? `/vetements/${article.slug}`
+                  : article.tag === "chaussures"
+                  ? `/chaussures/${article.slug}`
+                  : `/article/${article.slug}`
+              }
+            />
+          ))}
+        </div>
+      )}
     </section>
   );
 }
