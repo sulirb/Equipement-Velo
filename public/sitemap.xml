@@ -516,4 +516,14 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
+<url>
+    <loc>https://www.equipement-velo.fr/article/ultrahuman-ring-air-la-bague-connectee-pour-les-cyclistes</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://www.equipement-velo.fr/article/comment-choisir-jambieres-et-manchettes-pour-velo</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
 </urlset>
