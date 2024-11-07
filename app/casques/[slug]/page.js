@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import HelmetTable from "./helmetTable";
 import "../../article/[slug]/article.scss";
 import { useCookies } from "react-cookie";
-import { baseUrl } from "../../../utils/baseUrl";
+import { baseUrl } from "@utils/baseUrl";
 import Image from "next/image";
 import { useRouter, useParams } from "next/navigation";
 import Loader from "../../../utils/loader";

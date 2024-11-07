@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Card from "../../../components/listCard";
 import "../../articles/articles.scss";
 import "../../article/[slug]/article.scss";
-import { baseUrl } from "../../../utils/baseUrl";
+import { baseUrl } from "@utils/baseUrl";
 import Loader from "../../../utils/loader";
 
 function ClothesArticles() {

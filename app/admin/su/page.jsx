@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import "../../../components/editor.scss";
 import { useCookies } from "react-cookie";
-import { baseUrl } from "../../../utils/baseUrl";
+import { baseUrl } from "@utils/baseUrl";
 import { useRouter } from "next/navigation";
 
 const SubmitImage = () => {

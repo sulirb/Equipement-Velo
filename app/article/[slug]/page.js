@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import "./article.scss";
 import { useCookies } from "react-cookie";
-import { baseUrl } from "../../../utils/baseUrl";
+import { baseUrl } from "@utils/baseUrl";
 import Image from "next/image";
 import { useParams, useRouter } from "next/navigation";
 import Loader from "../../../utils/loader";

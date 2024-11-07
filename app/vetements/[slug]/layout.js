@@ -1,5 +1,5 @@
 import Page from "./page";
-import { baseUrl } from "../../../utils/baseUrl";
+import { baseUrl } from "@utils/baseUrl";
 
 export async function generateMetadata({ params }) {
   // read route params
