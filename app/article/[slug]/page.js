@@ -5,7 +5,7 @@ import { useCookies } from "react-cookie";
 import { baseUrl } from "@utils/baseUrl";
 import Image from "next/image";
 import { useParams, useRouter } from "next/navigation";
-import Loader from "../../../utils/loader";
+import Loader from "@utils/loader";
 
 function Article() {
   const [article, setArticle] = useState(null);

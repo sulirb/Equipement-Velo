@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useWindowSize } from "../utils/useContext";
+import { useWindowSize } from "@utils/useContext";
 import { Icon } from "@iconify/react";
 import PropTypes from "prop-types";
 import "./dropdown.scss";

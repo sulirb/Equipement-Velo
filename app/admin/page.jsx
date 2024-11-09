@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useCookies } from "react-cookie";
 import axios from "axios";
 import "./connexion.scss";
-import { baseUrl } from "../../utils/baseUrl";
+import { baseUrl } from "@utils/baseUrl";
 import { useRouter } from "next/navigation";
 
 function Connexion() {

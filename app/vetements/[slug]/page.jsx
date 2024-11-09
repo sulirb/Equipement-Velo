@@ -6,7 +6,7 @@ import "../../article/[slug]/article.scss";
 import { useCookies } from "react-cookie";
 import { baseUrl } from "@utils/baseUrl";
 import Image from "next/image";
-import Loader from "../../../utils/loader";
+import Loader from "@utils/loader";
 
 function VetementsArticle() {
   const [article, setArticle] = useState(null);

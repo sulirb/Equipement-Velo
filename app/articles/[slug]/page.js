@@ -5,7 +5,7 @@ import "../articles.scss";
 import Pagination from "../../../components/pagination";
 import { baseUrl } from "@utils/baseUrl";
 import { useParams, useRouter } from "next/navigation";
-import Loader from "../../../utils/loader";
+import Loader from "@utils/loader";
 
 function Articles() {
   const [articles, setArticles] = useState([]);

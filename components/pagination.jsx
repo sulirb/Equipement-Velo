@@ -4,7 +4,7 @@ import { Icon } from "@iconify/react";
 import PropTypes from "prop-types";
 import "./pagination.scss";
 import { useEffect, useState } from "react";
-import { baseUrl } from "../utils/baseUrl";
+import { baseUrl } from "@utils/baseUrl";
 
 function Pagination({ currentPage }) {
   const [articles, setArticles] = useState([]);

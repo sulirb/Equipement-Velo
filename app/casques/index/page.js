@@ -4,7 +4,7 @@ import Card from "../../../components/listCard";
 import "../../articles/articles.scss";
 import "../../article/[slug]/article.scss";
 import { baseUrl } from "@utils/baseUrl";
-import Loader from "../../../utils/loader";
+import Loader from "@utils/loader";
 
 function HelmetArticles() {
   const [articles, setArticles] = useState([]);

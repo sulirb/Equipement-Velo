@@ -2,10 +2,10 @@
 import { useState } from "react";
 import "./editor.scss";
 import { useCookies } from "react-cookie";
-import { baseUrl } from "../utils/baseUrl";
+import { baseUrl } from "@utils/baseUrl";
 import { useEditor, EditorContent } from "@tiptap/react";
-import TiptapOptions from "../utils/tiptapOptions";
-import MenuBar from "../utils/menuBar";
+import TiptapOptions from "@utils/tiptapOptions";
+import MenuBar from "@utils/menuBar";
 
 const TiptapEditor = () => {
   const [cookies] = useCookies(["token"]);

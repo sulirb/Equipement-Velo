@@ -5,7 +5,7 @@ import { Icon } from "@iconify/react";
 import { React, useState } from "react";
 import websiteLogo from "../app/assets/logo.png";
 import Image from "next/image";
-import { WindowSizeProvider } from "../utils/windowSizeContext";
+import { WindowSizeProvider } from "@utils/windowSizeContext";
 
 function Header({ pageProps }) {
   const [showMenu, setShowMenu] = useState(false);

@@ -1,10 +1,10 @@
 "use client";
 import { useState, useEffect } from "react";
-import CardHome from "./homeCard.jsx";
+import CardHome from "./homeCard";
 import "./articlesGrid.scss";
-import { baseUrl } from "../../utils/baseUrl.jsx";
+import { baseUrl } from "@utils/baseUrl";
 import React from "react";
-import Loader from "../../utils/loader";
+import Loader from "@utils/loader";
 
 function ArticlesGrid() {
   const [articles, setArticles] = useState([]);
