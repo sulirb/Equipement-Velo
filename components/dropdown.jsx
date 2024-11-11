@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import "./dropdown.scss";
 import Link from "next/link";
 
-function Dropdown({ title, options }) {
+function Dropdown({ title, options, onClose }) {
   const [isOpen, setIsOpen] = useState(false);
   const [isGreaterThan768px, setIsGreaterThan768px] = useState(false);
   const { width } = useWindowSize();
@@ -17,15 +17,18 @@ function Dropdown({ title, options }) {
 
   const handleDropdownClose = () => {
     setIsOpen(false);
+    if (onClose) {
+      onClose();
+    }
+  };
+
+  const handleOptionClick = () => {
+    handleDropdownClose();
   };
 
   useEffect(() => {
     function handleResize() {
-      if (width > 768) {
-        setIsGreaterThan768px(true);
-      } else {
-        setIsGreaterThan768px(false);
-      }
+      setIsGreaterThan768px(width > 768);
     }
 
     handleResize();
@@ -41,6 +44,12 @@ function Dropdown({ title, options }) {
 
   if (!mounted) return <></>;
 
+  const titleContent = isGreaterThan768px ? (
+    <Link href={`/${title.toLowerCase().replace(/ê/g, "e")}`}>{title}</Link>
+  ) : (
+    <span>{title}</span>
+  );
+
   return (
     <li className="dropdown-container">
       <div
@@ -49,11 +58,7 @@ function Dropdown({ title, options }) {
         onMouseLeave={isGreaterThan768px ? handleDropdownClose : null}
         onClick={!isGreaterThan768px ? toggleDropdown : null}
       >
-        <div className="dropdown__title">
-          <Link href={`/${title.toLowerCase().replace(/ê/g, "e")}`}>
-            {title}
-          </Link>
-        </div>
+        <div className="dropdown__title">{titleContent}</div>
         {isOpen && (
           <div className="dropdown__title-options">
             {options.map((option) => (
@@ -65,6 +70,7 @@ function Dropdown({ title, options }) {
                   .replace(/\./g, "-")
                   .toLowerCase()}`}
                 key={option}
+                onClick={handleOptionClick}
               >
                 {option}
               </Link>
@@ -77,6 +83,7 @@ function Dropdown({ title, options }) {
           href={`/${title.toLowerCase().replace(/ê/g, "e")}/index`}
           className="mobile-anchor"
           title={`Accédez aux articles sur les ${title.toLowerCase()}`}
+          onClick={handleOptionClick}
         >
           <Icon icon="mingcute:arrow-right-fill" />
         </Link>
@@ -88,6 +95,7 @@ function Dropdown({ title, options }) {
 Dropdown.propTypes = {
   title: PropTypes.string.isRequired,
   options: PropTypes.array.isRequired,
+  onClose: PropTypes.func,
 };
 
 export default Dropdown;

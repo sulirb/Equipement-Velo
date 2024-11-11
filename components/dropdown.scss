@@ -51,8 +51,14 @@
       justify-content: space-between;
     }
     &__title {
-      pointer-events: none;
       padding: 0;
+      span {
+        cursor: pointer;
+        color: #fff;
+        &:hover {
+          color: #000;
+        }
+      }
       &-options {
         position: relative;
         box-shadow: none;
@@ -67,5 +73,8 @@
     margin-inline-end: 5vw;
     color: white;
     font-size: 40px;
+    &:hover {
+      color: #000;
+    }
   }
 }

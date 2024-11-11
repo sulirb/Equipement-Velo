@@ -44,6 +44,7 @@ function Header({ pageProps }) {
                 "Casques Smith",
                 "Casques Uvex",
               ]}
+              onClose={handleMenuToggle}
             />
             <Dropdown
               {...pageProps}
@@ -57,6 +58,7 @@ function Header({ pageProps }) {
                 "Lunettes Smith",
                 "Lunettes Uvex",
               ]}
+              onClose={handleMenuToggle}
             />
             <Dropdown
               {...pageProps}
@@ -73,6 +75,7 @@ function Header({ pageProps }) {
                 "Vêtements Santini",
                 "Vêtements Sportful",
               ]}
+              onClose={handleMenuToggle}
             />
             <Dropdown
               {...pageProps}
@@ -85,6 +88,7 @@ function Header({ pageProps }) {
                 "Chaussures Shimano",
                 "Chaussures Sidi",
               ]}
+              onClose={handleMenuToggle}
             />
           </ul>
         </nav>
