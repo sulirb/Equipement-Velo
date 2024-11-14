@@ -3,6 +3,7 @@ import { useCookies } from "react-cookie";
 import MyEditor from "../../../components/editor";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import "./style.scss";
 
 function ArticleEditor() {
   const [cookies] = useCookies(["token"]);

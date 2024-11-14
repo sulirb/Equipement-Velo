@@ -38,6 +38,14 @@ function Footer() {
           >
             <Icon icon="hugeicons:facebook-02" />
           </a>
+          <a
+            href="https://bsky.app/profile/equipement-velo.bsky.social"
+            aria-label="Bluesky"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Icon icon="meteor-icons:bluesky" />
+          </a>
         </div>
       </div>
       <div className="footer__flex-b">
