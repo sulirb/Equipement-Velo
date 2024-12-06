@@ -25,7 +25,7 @@ function Mentions() {
             Le site equipement-velo.fr est hébergé par RENDER.COM, dont le siège
             social est situé au 525 Brannan St Suite 300, San Francisco, CA
             94107, États-Unis, joignable par le moyen suivant :{" "}
-            <a href="support@render.com">support@render.com</a>
+            <a href="mailto:support@render.com">support@render.com</a>
           </p>
 
           <h3>
