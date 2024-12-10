@@ -1,10 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
   images: {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "equipement-velo-api.onrender.com",
+        hostname: "equipement-velo.fr",
       },
     ],
   },
