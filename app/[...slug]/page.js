@@ -11,3 +11,5 @@ export default function CatchAll() {
 
   return null;
 }
+
+export const runtime = "edge";
