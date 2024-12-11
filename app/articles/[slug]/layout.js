@@ -7,3 +7,4 @@ export const metadata = {
 };
 
 export default Page;
+export const runtime = "edge";

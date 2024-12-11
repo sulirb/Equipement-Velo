@@ -9,3 +9,5 @@ export async function GET() {
   return NextResponse.redirect(loginUrl);
 }
 */
+
+export const runtime = "edge";
