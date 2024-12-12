@@ -1,0 +1,24 @@
+// app/maintenance/maintenance.scss
+.maintenance-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  color: #333;
+  font-family: "Arial", sans-serif;
+
+  .maintenance-content {
+    text-align: center;
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #666;
+    }
+  }
+}
