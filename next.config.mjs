@@ -2,6 +2,7 @@ import { setupDevPlatform } from "@cloudflare/next-on-pages/next-dev";
 import dotenv from "dotenv";
 
 dotenv.config();
+console.log("MAINTENANCE_MODE:", process.env.MAINTENANCE_MODE);
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -16,7 +17,7 @@ const nextConfig = {
   reactStrictMode: true,
   async redirects() {
     // Vérifiez si le mode maintenance est activé
-    if (process.env.MAINTENANCE_MODE === true) {
+    if (process.env.MAINTENANCE_MODE == "true") {
       return [
         {
           source: "/((?!maintenance).*)",
