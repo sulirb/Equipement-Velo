@@ -14,7 +14,7 @@ const montserrat = Montserrat({
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "WebSite",
+  "@type": "Organization",
   name: "Équipement Vélo",
   description: "Conseils Casques, Vêtements, Lunettes et Chaussures",
   url: "https://equipement-velo.fr",
