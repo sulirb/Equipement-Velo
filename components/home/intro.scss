@@ -53,6 +53,14 @@
   }
 }
 
+@media (min-width: 1824px) {
+  .intro {
+    &__txt p {
+      font-size: 24px;
+    }
+  }
+}
+
 @media screen and (max-width: 1028px) {
   .intro {
     padding: 2em;
