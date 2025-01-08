@@ -30,6 +30,21 @@
   }
 }
 
+@media (min-width: 1824px) {
+  .header {
+    &__logo {
+      height: 150px;
+      img {
+        width: 500px;
+      }
+    }
+    &__nav {
+      left: 45%;
+      margin-top: -5.8em;
+    }
+  }
+}
+
 @media (max-width: 1330px) {
   .header {
     padding: 0 7em;

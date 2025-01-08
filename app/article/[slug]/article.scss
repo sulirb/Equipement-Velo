@@ -71,6 +71,27 @@
   background-color: $back-article-color;
 }
 
+@media (min-width: 1824px) {
+  .article {
+    margin: 0 20em;
+    &__title {
+      font-size: 60px;
+    }
+    &__text h3 {
+      font-size: 30px;
+    }
+    &__text h4 {
+      font-size: 25px;
+    }
+    &__text p {
+      font-size: 20px;
+    }
+    &__text img {
+      max-width: 60vw;
+    }
+  }
+}
+
 @media (max-width: 1200px) {
   .article {
     margin: 0 12em;

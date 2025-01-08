@@ -56,6 +56,37 @@
   }
 }
 
+@media (min-width: 1824px) {
+  .footer {
+    &__flex-a {
+      img {
+        width: 250px;
+      }
+      p {
+        font-size: 20px;
+      }
+      &-icon {
+        font-size: 70px;
+      }
+    }
+    &__flex-b {
+      &-anc {
+        li {
+          margin-right: 2em;
+        }
+      }
+    }
+    &__flex-b {
+      p {
+        font-size: 20px;
+      }
+      &-anc {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
 @media (max-width: 1028px) {
   .footer__flex-b {
     flex-direction: column;
