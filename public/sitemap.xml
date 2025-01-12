@@ -546,4 +546,19 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
+<url>
+    <loc>https://www.equipement-velo.fr/article/cagoule-velo-hiver</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://www.equipement-velo.fr/article/avis-veste-castelli-squadra-stretch-jacket-coupe-vent</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://www.equipement-velo.fr/article/selection-plus-beaux-maillots-de-velo-world-tour-2025</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
 </urlset>
