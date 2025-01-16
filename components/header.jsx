@@ -18,8 +18,8 @@ function Header({ pageProps }) {
     <WindowSizeProvider>
       <header className="header">
         <h1 className="header__logo">
-          <a href="/" aria-label="Équipement-Vélo">
-            <Image src={websiteLogo} alt="Logo du site equipement-velo.fr" />
+          <a href="/" aria-label="Équipement Vélo">
+            <Image src={websiteLogo} alt="Logo du site Équipement Vélo" />
           </a>
         </h1>
         <nav className="header__nav">
