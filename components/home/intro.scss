@@ -55,6 +55,9 @@
 
 @media (min-width: 1824px) {
   .intro {
+    &__title {
+      font-size: 36px;
+    }
     &__txt p {
       font-size: 24px;
     }

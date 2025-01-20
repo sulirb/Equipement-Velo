@@ -23,6 +23,20 @@
   }
 }
 
+@media (min-width: 1824px) {
+  .mentions-text {
+    margin: 0 20em;
+    h2 {
+      font-size: 60px;
+    }
+    h3 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+}
 @media (max-width: 1100px) {
   .mentions-text {
     margin: 0;

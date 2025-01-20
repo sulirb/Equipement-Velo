@@ -37,3 +37,9 @@ button {
   margin: 3em 0;
   text-align: center;
 }
+
+@media (min-width: 1824px) {
+  button {
+    font-size: 25px;
+  }
+}

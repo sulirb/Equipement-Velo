@@ -37,6 +37,12 @@
   background-size: cover;
 }
 
+@media (min-width: 1824px) {
+  .banner__title {
+    font-size: 100px;
+  }
+}
+
 @media (max-width: 1028px) {
   .banner {
     padding: 5rem 10rem 10rem;

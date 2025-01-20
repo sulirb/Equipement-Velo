@@ -40,6 +40,20 @@
   transform: scale3d(1.03, 1.03, 1.03);
 }
 
+@media (min-width: 1824px) {
+  .card {
+    min-height: 400px;
+    max-width: 500px;
+    img {
+      width: 500px;
+      height: 300px;
+    }
+    .card__container__title__span {
+      font-size: 30px;
+    }
+  }
+}
+
 @media screen and (max-width: 1028px) {
   .card {
     max-width: 300px;
