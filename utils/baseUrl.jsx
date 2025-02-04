@@ -1,1 +1,1 @@
-export const baseUrl = "https://equipement-velo-api.vercel.app";
+export const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
