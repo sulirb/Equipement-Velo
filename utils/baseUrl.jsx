@@ -1,4 +1,1 @@
-import dotenv from "dotenv";
-
-dotenv.config();
-export const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+export const baseUrl = "https://equipement-velo-api.vercel.app";
