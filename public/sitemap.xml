@@ -576,4 +576,9 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
+<url>
+    <loc>https://www.equipement-velo.fr/article/proteger-et-transporter-avec-la-housse-de-velo</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
 </urlset>
