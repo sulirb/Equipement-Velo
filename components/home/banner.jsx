@@ -11,9 +11,9 @@ function Banner() {
   return (
     <section className="banner">
       <div className="banner__flex">
-        <h2 className={`${merriweather.className} banner__title`}>
+        <h1 className={`${merriweather.className} banner__title`}>
           Roulez avec style et en sécurité
-        </h2>
+        </h1>
       </div>
     </section>
   );

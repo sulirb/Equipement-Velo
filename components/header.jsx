@@ -17,11 +17,11 @@ function Header({ pageProps }) {
   return (
     <WindowSizeProvider>
       <header className="header">
-        <h1 className="header__logo">
+        <div className="header__logo">
           <a href="/" aria-label="Équipement Vélo">
             <Image src={websiteLogo} alt="Logo du site Équipement Vélo" />
           </a>
-        </h1>
+        </div>
         <nav className="header__nav">
           <div className="menu-toggle" onClick={handleMenuToggle}>
             {showMenu ? <Icon icon="mdi:close" /> : <Icon icon="mdi:menu" />}
