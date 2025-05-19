@@ -9,12 +9,12 @@ export function Table(data) {
           <h3>Coup de coeur</h3>
           {data.photos && (
             <Image
+              unoptimized
               className="tab__photo"
               src={data.photos[0]}
               alt={`Casque ${data.modeles[0]}`}
               width={100}
               height={100}
-              unoptimized
             />
           )}
           {data.modeles && (
@@ -24,12 +24,12 @@ export function Table(data) {
         <div className="tab__coeur-store">
           {data.revendeurs && data.revendeurs[0] && (
             <Image
+              unoptimized
               className="tab__brand"
               src={data.revendeurs[0].nom}
               alt="Logo Amazon"
               width={100}
               height={100}
-              unoptimized
             />
           )}
           <div className="anchor">
@@ -47,12 +47,12 @@ export function Table(data) {
         <div className="tab__coeur-store">
           {data.revendeurs && data.revendeurs[1] && (
             <Image
+              unoptimized
               className="tab__brand"
               src={data.revendeurs[1].nom}
               alt="Logo Alltricks"
               width={100}
               height={100}
-              unoptimized
             />
           )}
           <div className="anchor">
@@ -73,12 +73,12 @@ export function Table(data) {
           <h3>Meilleur rapport qualité/prix</h3>
           {data.photos && (
             <Image
+              unoptimized
               className="tab__photo"
               src={data.photos[1]}
               alt={`Casque ${data.modeles[1]}`}
               width={100}
               height={100}
-              unoptimized
             />
           )}
           {data.modeles && (
@@ -88,12 +88,12 @@ export function Table(data) {
         <div className="tab__rapport-store">
           {data.revendeurs && data.revendeurs[0] && (
             <Image
+              unoptimized
               className="tab__brand"
               src={data.revendeurs[0].nom}
               alt="Logo Amazon"
               width={100}
               height={100}
-              unoptimized
             />
           )}
           <div className="anchor">
@@ -111,12 +111,12 @@ export function Table(data) {
         <div className="tab__rapport-store">
           {data.revendeurs && data.revendeurs[1] && (
             <Image
+              unoptimized
               className="tab__brand"
               src={data.revendeurs[1].nom}
               alt="Logo Alltricks"
               width={100}
               height={100}
-              unoptimized
             />
           )}
           <div className="anchor">
@@ -138,12 +138,12 @@ export function Table(data) {
           <h3>Meilleur choix</h3>
           {data.photos && (
             <Image
+              unoptimized
               className="tab__photo"
               src={data.photos[2]}
               alt={`Casque ${data.modeles[2]}`}
               width={100}
               height={100}
-              unoptimized
             />
           )}
           {data.modeles && (
@@ -153,12 +153,12 @@ export function Table(data) {
         <div className="tab__choix-store">
           {data.revendeurs && data.revendeurs[0] && (
             <Image
+              unoptimized
               className="tab__brand"
               src={data.revendeurs[0].nom}
               alt="Logo Amazon"
               width={100}
               height={100}
-              unoptimized
             />
           )}
           <div className="anchor">
@@ -176,12 +176,12 @@ export function Table(data) {
         <div className="tab__choix-store">
           {data.revendeurs && data.revendeurs[1] && (
             <Image
+              unoptimized
               className="tab__brand"
               src={data.revendeurs[1].nom}
               alt="Logo Alltricks"
               width={100}
               height={100}
-              unoptimized
             />
           )}
           <div className="anchor">

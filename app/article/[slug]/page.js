@@ -81,6 +81,7 @@ function Article() {
                 Publié le : {article.createdAt}
               </div>
               <Image
+                unoptimized
                 className="article__file"
                 src={article.file}
                 alt={`${article.content
@@ -88,7 +89,6 @@ function Article() {
                   .substring(0, 20)}...`}
                 width={100}
                 height={100}
-                unoptimized
               />
               <div
                 className="article__text"

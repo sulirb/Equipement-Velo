@@ -8,7 +8,11 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer__flex-a">
-        <Image src={websiteLogo} alt="Logo du site equipement-velo.fr" />
+        <Image
+          unoptimized
+          src={websiteLogo}
+          alt="Logo du site equipement-velo.fr"
+        />
         <p>
           Découvrez les meilleurs conseils pour choisir vos équipements de vélo
           adaptés à votre style et à vos besoins.

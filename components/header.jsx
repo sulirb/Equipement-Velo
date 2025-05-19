@@ -19,7 +19,11 @@ function Header({ pageProps }) {
       <header className="header">
         <div className="header__logo">
           <a href="/" aria-label="Équipement Vélo">
-            <Image src={websiteLogo} alt="Logo du site Équipement Vélo" />
+            <Image
+              unoptimized
+              src={websiteLogo}
+              alt="Logo du site Équipement Vélo"
+            />
           </a>
         </div>
         <nav className="header__nav">

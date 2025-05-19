@@ -20,11 +20,11 @@ function HomeText() {
         </p>
 
         <Image
+          unoptimized
           src={loveimg}
           alt="I love bike"
           width={100}
           height={100}
-          unoptimized
         />
         <h3>Casque de vélo : Votre Bouclier de Protection</h3>
 
@@ -189,11 +189,11 @@ function HomeText() {
           d&apos;équipement.
         </p>
         <Image
+          unoptimized
           src={logolist}
           alt="Toutes les marques"
           width={100}
           height={100}
-          unoptimized
         />
         <h3>Abus</h3>
         <p>

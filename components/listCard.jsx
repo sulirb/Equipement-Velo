@@ -8,10 +8,10 @@ function CardList({ picture, title, href, content }) {
       <div className="listcard">
         <div className="listcard__image">
           <Image
+            unoptimized
             src={picture}
             width={100}
             height={100}
-            unoptimized
             alt="logo"
           />
         </div>
