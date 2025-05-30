@@ -26,7 +26,13 @@ const jsonLd = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
-      <head></head>
+      <head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4910996310955486"
+          crossorigin="anonymous"
+        ></script>
+      </head>
       <body className={montserrat.className}>
         <script
           type="application/ld+json"
